@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Hi! Feel free to read some of my thoughts and ideas :)
 
 You can use the [editor on GitHub](https://github.com/jyotsna-iy/jyotsna-iy.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
