@@ -16,3 +16,26 @@
 </body>
 </html>
 
+/* style.css */
+body {
+    background-color: #87CEEB; /* Sky blue leaning towards cerulean */
+}
+
+.header {
+    background-color: white;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-size: 18px;
+}
+
+
