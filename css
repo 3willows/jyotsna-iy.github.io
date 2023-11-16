@@ -1,33 +1,53 @@
 /* styles.css */
 
 :root {
-  --font-size: 18px;
+  --primary-color: #B6D5DE;
 }
 
 body {
-  background-color: #B6D5DE;
-  color: #333;
+  background-color: var(--primary-color);
   font-family: 'DM Mono', monospace;
-  font-size: var(--font-size);  
 }
 
-img {
-  max-width: 100%;
+h1 {
+  font-weight: 500;
 }
 
-.main-nav {
-  text-align: center;
+p {
+  line-height: 1.6;
 }
 
-.main-nav a {
+nav {
+  text-align: center; 
+  margin-bottom: 40px;
+}
+
+nav a {
   text-decoration: none;
-  padding: 10px;
+  margin: 0 10px;
+  color: #000;
 }
 
-@media (max-width: 600px) {
-  :root {
-    --font-size: 16px; 
-  }
-  
-  /* other responsive styles */
+.intro {
+  max-width: 400px;
+  margin: 0 auto 40px;
+}
+
+.intro h1 {
+  margin-top: 40px;
+}
+
+.about {
+  max-width: 550px;
+  margin: 0 auto 40px;
+}
+
+.contact {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+hr {
+  border: 1px solid #000;
+  margin: 30px 0;
 }
