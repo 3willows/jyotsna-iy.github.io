@@ -1,1 +1,33 @@
+/* styles.css */
 
+:root {
+  --font-size: 18px;
+}
+
+body {
+  background-color: #B6D5DE;
+  color: #333;
+  font-family: 'DM Mono', monospace;
+  font-size: var(--font-size);  
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-nav {
+  text-align: center;
+}
+
+.main-nav a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --font-size: 16px; 
+  }
+  
+  /* other responsive styles */
+}
