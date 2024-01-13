@@ -8,7 +8,7 @@
         body {
             background-color: #b9d8ea;
             font-family: 'DM Mono', monospace;
-            margin: 40;
+            margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
@@ -16,11 +16,10 @@
         header {
             text-align: center;
             padding: 30px;
-            bottom: 15;
         }
 
         nav {
-            background-color: #b9d8ea; /* Set to the body background color */
+            background-color: #b9d8ea;
             text-align: center;
             padding: 10px;
         }
@@ -28,29 +27,37 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #000; /* Set to the desired text color */
+            color: #000;
         }
 
         section {
+            display: flex;
+            justify-content: space-between;
             padding: 20px;
         }
-         figure {
+
+        section p {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        figure {
             flex: 1;
             margin: 0;
             padding: 0;
         }
 
         footer {
-            background-color: #b9d8ea; /* Set to the body background color */
+            background-color: #b9d8ea;
             text-align: center;
             padding: 10px;
             position: fixed;
-            bottom: 15;
+            bottom: 15px;
             width: 100%;
         }
 
         footer img {
-            width: 30px; /* Adjust the image size as needed */
+            width: 30px;
             margin: 0 10px;
         }
     </style>
@@ -70,26 +77,35 @@
     </nav>
 
     <section>
-    <p>Hi! I'm Jyotsna ✨
-        I work at the intersection between computer science, philosophy, political science, anthropology, and
-        science and technology studies (STS).
-        Currently, I'm a Research Assistant at The Alan Turing Institute in the Trustworthy Digital Identity Systems
-        project researching Digital Public Goods (DPGs).</p>
+        <p>Hi! I'm Jyotsna ✨
+            I work at the intersection between computer science, philosophy, political science, anthropology, and
+            science and technology studies (STS).
+            Currently, I'm a Research Assistant at The Alan Turing Institute in the Trustworthy Digital Identity Systems
+            project researching Digital Public Goods (DPGs).</p>
 
-    <figure>
-        <img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/headshot.jpg" alt="Headshot of Jyotsna Iyer" style="width: 100%; max-width: 200px;">
-    </figure>
-</section>
-
+        <figure>
+            <img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/headshot.jpg"
+                alt="Headshot of Jyotsna Iyer" style="width: 100%; max-width: 200px;">
+        </figure>
+    </section>
 
     <footer>
-        <a href="https://twitter.com/jyotsna_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png" alt="Twitter Logo"></a>
-        <a href="https://www.are.na/jyotsna-_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png" alt="Arena Logo"></a>
-        <a href="mailto:jyotsna.iy@gmail.com"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png" alt="Gmail Logo"></a>
-        <a href="https://www.linkedin.com/in/jyotsna-iy/"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png" alt="LinkedIn Logo"></a>
+        <a href="https://twitter.com/jyotsna_iy"><img
+                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png"
+                alt="Twitter Logo"></a>
+        <a href="https://www.are.na/jyotsna-_iy"><img
+                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png"
+                alt="Arena Logo"></a>
+        <a href="mailto:jyotsna.iy@gmail.com"><img
+                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png"
+                alt="Gmail Logo"></a>
+        <a href="https://www.linkedin.com/in/jyotsna-iy/"><img
+                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png"
+                alt="LinkedIn Logo"></a>
     </footer>
 
 </body>
 
 </html>
+
 
