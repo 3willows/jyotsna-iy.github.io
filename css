@@ -1,27 +1,11 @@
-/* styles.css */
-
 body {
-  background: #a4d6d0;  
-  font-family: 'DM Mono';
-}  
-
-.header {
-  text-align: center;
-  font-size: 48px;
 }
 
-nav {
-  text-align: center;
-  font-size: 18px; 
+.caption {
+    text-align: center;
+    padding: 10px;
+    background-color: #b9d8ea; 
+    color: #000000; 
 }
 
-nav a {
-  text-decoration: none;
-  color: black;
-  padding: 14px 16px;  
-  display: inline-block;
-}
 
-footer {
-  text-align: center;
-}
