@@ -7,5 +7,11 @@ body {
     background-color: #b9d8ea; 
     color: #000000; 
 }
+.watermark {
+    margin-right: 0.5em; /* Add margin to the right */
+    opacity: 0.3; /* Adjust opacity as needed */
+    color: #888; /* Adjust color as needed */
+    font-size: 12px; /* Adjust font size as needed */
+}
 
 
