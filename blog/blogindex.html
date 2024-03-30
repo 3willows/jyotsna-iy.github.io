@@ -4,6 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jyo's Blog</title>
+    <style>
+        body {
+            background-color: #b9d8ea;
+            font-family: 'DM Mono', monospace;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            letter-spacing: 2px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        nav {
+            background-color: #b9d8ea;
+            text-align: center;
+            padding: 5px;
+        }
+        
+        nav a {
+            margin: 0 30px;
+            text-decoration: none;
+            color: #000;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        article {
+            margin-bottom: 30px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        article p {
+            line-height: 1.5;
+        }
+        
+        article a {
+            color: blue;
+            text-decoration: underline;
+        }
+        
+        footer {
+            background-color: #b9d8ea;
+            text-align: center;
+            padding: 30px;
+            position: fixed;
+            bottom: 15px;
+            width: 100%;
+        }
+        
+        footer img {
+            width: 30px;
+            margin: 0 4cm;
+            vertical-align: middle;
+        }
+        
+        .watermark {
+            margin-right: 0.5em;
+            margin-top: 1em;
+            opacity: 0.3;
+            color: #888;
+            font-size: 12px;
+            font-family: 'DM Mono', monospace;
+        }
+        
+        .watermark a {
+            text-decoration: none;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,11 +94,11 @@
     
     <main>
         <article>
-            <h2>Blog Post Title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec tincidunt lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl eget nisl.</p>
-            <a href="#">Read More</a>
+            <span>01/01/2023</span> <a href="#">Example Blog Post 1</a>
         </article>
-        <!-- Add more articles here -->
+        <article>
+            <span>02/15/2023</span> <a href="#">Example Blog Post 2</a>
+        </article>
     </main>
     
     <footer>
