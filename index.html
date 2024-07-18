@@ -5,25 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jyo</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .sidenav {
+            width: 250px;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            overflow-y: auto;
+            padding: 20px;
+            background-color: #a7c7d9;
+        }
+        .sidenav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidenav li {
+            margin-bottom: 10px;
+        }
+        .sidenav a {
+            text-decoration: none;
+            color: #000;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidenav {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+        }
+    </style>
 </head>
 <body>
     <header> 
-        <h1>Jyotsna Iyer</h1>
+        <h1>Jyo Iyer</h1>
     </header>
-    <nav>
-        <a href="https://jyotsna-iy.github.io">Home</a>
-        <a href="https://jyotsna-iy.github.io/about">preface/epilogue</a>
-        <a href="https://jyotsna-iy.github.io/work">Work</a>
-        <a href="blog/blogindex.html">Blog</a>
-    </nav>
-    <section>
-        <p>Hi! I'm Jyo (she/her) ✨<br>
-            Currently, I'm a Research Assistant at The Alan Turing Institute in the Trustworthy Digital Identity Systems project researching Digital Public Goods (DPGs) with a focus in the banking/payments/commerce sectors.</p>
-        <figure>
-            <img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/headshot.jpg"
-                alt="Headshot of Jyotsna Iyer">
-        </figure>
-    </section>
+    
+    <div class="container">
+        <nav class="sidenav">
+            <ul>
+                <li><a href="https://jyotsna-iy.github.io">Home</a></li>
+                <li><a href="https://jyotsna-iy.github.io/about">preface/epilogue</a></li>
+                <li><a href="https://jyotsna-iy.github.io/work">Work</a></li>
+                <li><a href="blog/blogindex.html">Blog</a></li>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            <section>
+                <p>Hi! I'm Jyo (she/her) ✨<br>
+                    Currently, I'm a Research Assistant at The Alan Turing Institute in the Trustworthy Digital Identity Systems project researching Digital Public Goods (DPGs) with a focus in the banking/payments/commerce sectors.</p>
+                <figure>
+                    <img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/headshot.jpg"
+                        alt="Headshot of Jyotsna Iyer">
+                </figure>
+            </section>
+        </div>
+    </div>
+
     <footer>
         <a href="https://twitter.com/jyotsna_iy"><img
                 src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png"
