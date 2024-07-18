@@ -12,12 +12,9 @@
         }
         .sidenav {
             width: 250px;
-            height: 100vh;
-            position: sticky;
-            top: 0;
-            overflow-y: auto;
             padding: 20px;
-            background-color: #a7c7d9;
+            background-color: #f8f9fa;
+            border-right: 1px solid #a2a9b1;
         }
         .sidenav ul {
             list-style-type: none;
@@ -28,11 +25,17 @@
         }
         .sidenav a {
             text-decoration: none;
-            color: #000;
+            color: #202122;
         }
         .content {
             flex: 1;
             padding: 20px;
+        }
+        .menu-button {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            padding: 10px;
         }
         @media screen and (max-width: 768px) {
             .container {
@@ -40,19 +43,29 @@
             }
             .sidenav {
                 width: 100%;
-                height: auto;
-                position: relative;
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                z-index: 1;
+            }
+            .menu-button {
+                display: block;
+            }
+            .show {
+                display: block;
             }
         }
     </style>
 </head>
 <body>
     <header> 
-        <h1>Jyo Iyer</h1>
+        <h1>Jyotsna Iyer</h1>
+        <div class="menu-button" onclick="toggleMenu()">☰</div>
     </header>
     
     <div class="container">
-        <nav class="sidenav">
+        <nav class="sidenav" id="mySidenav">
             <ul>
                 <li><a href="https://jyotsna-iy.github.io">Home</a></li>
                 <li><a href="https://jyotsna-iy.github.io/about">preface/epilogue</a></li>
@@ -91,5 +104,12 @@
             <a href="https://jyotsna-iy.github.io/psa">PSA</a>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var sidenav = document.getElementById("mySidenav");
+            sidenav.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
