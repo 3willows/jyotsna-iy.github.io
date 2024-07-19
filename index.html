@@ -6,6 +6,14 @@
     <title>Jyo</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            padding: 20px 0;
+        }
         .container {
             display: flex;
             flex-direction: row;
@@ -35,6 +43,17 @@
             cursor: pointer;
             padding: 10px;
         }
+        .sidenav ul ul {
+            padding-left: 20px;
+            display: none;
+        }
+        .sidenav .has-submenu > a::after {
+            content: ' ▼';
+            font-size: 0.7em;
+        }
+        .sidenav .submenu-active > ul {
+            display: block;
+        }
         @media screen and (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -45,17 +64,20 @@
                 position: fixed;
                 top: 0;
                 left: 0;
-                right: 0; 
-                bottom: 0; 
+                right: 0;
+                bottom: 0;
                 z-index: 1;
-                padding-top: 100px; 
+                padding-top: 100px;
             }
             .menu-button {
                 display: block;
                 text-align: center;
-                margin-top: 10px; 
+                margin-top: 10px;
             }
             .show {
+                display: block;
+            }
+            .sidenav .submenu-active > ul {
                 display: block;
             }
         }
@@ -64,16 +86,29 @@
 <body>
     <header> 
         <h1>Jyo Iyer</h1>
-        <div class="menu-button" onclick="toggleMenu()">☰</div>
     </header>
     
+    <div class="menu-button" onclick="toggleMenu()">☰</div>
+
     <div class="container">
         <nav class="sidenav" id="mySidenav">
             <ul>
                 <li><a href="https://jyotsna-iy.github.io">Home</a></li>
                 <li><a href="https://jyotsna-iy.github.io/about">preface/epilogue</a></li>
-                <li><a href="https://jyotsna-iy.github.io/work">Work</a></li>
-                <li><a href="blog/blogindex.html">Blog</a></li>
+                <li class="has-submenu">
+                    <a href="https://jyotsna-iy.github.io/work" onclick="toggleSubmenu(event, this.parentElement)">Work</a>
+                    <ul>
+                        <li><a href="https://jyotsna-iy.github.io/work/project1">Project 1</a></li>
+                        <li><a href="https://jyotsna-iy.github.io/work/project2">Project 2</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="blog/blogindex.html" onclick="toggleSubmenu(event, this.parentElement)">Blog</a>
+                    <ul>
+                        <li><a href="blog/post1.html">Post 1</a></li>
+                        <li><a href="blog/post2.html">Post 2</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         
@@ -110,6 +145,11 @@
         function toggleMenu() {
             var sidenav = document.getElementById("mySidenav");
             sidenav.classList.toggle("show");
+        }
+
+        function toggleSubmenu(event, element) {
+            event.preventDefault();
+            element.classList.toggle("submenu-active");
         }
     </script>
 </body>
