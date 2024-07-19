@@ -27,13 +27,6 @@
             text-decoration: none;
             color: #202122;
         }
-        .sidenav .subpages {
-            margin-left: 20px;
-            display: none;
-        }
-        .sidenav .active .subpages {
-            display: block;
-        }
         .content {
             flex: 1;
             padding: 20px;
@@ -67,7 +60,7 @@
 </head>
 <body>
     <header> 
-        <h1>Jyotsna Iyer</h1>
+        <h1>Jyo Iyer</h1>
         <div class="menu-button" onclick="toggleMenu()">☰</div>
     </header>
     
@@ -76,37 +69,44 @@
             <ul>
                 <li><a href="https://jyotsna-iy.github.io">Home</a></li>
                 <li><a href="https://jyotsna-iy.github.io/about">preface/epilogue</a></li>
-                <li>
-                    <a href="https://jyotsna-iy.github.io/work" onclick="toggleSubpages(event, this.parentElement)">Work</a>
-                    <ul class="subpages">
-                        <li><a href="https://jyotsna-iy.github.io/work/project1">Project 1</a></li>
-                        <li><a href="https://jyotsna-iy.github.io/work/project2">Project 2</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="blog/blogindex.html" onclick="toggleSubpages(event, this.parentElement)">Blog</a>
-                    <ul class="subpages">
-                        <li><a href="blog/post1.html">Post 1</a></li>
-                        <li><a href="blog/post2.html">Post 2</a></li>
-                    </ul>
-                </li>
+                <li><a href="https://jyotsna-iy.github.io/work">Work</a></li>
+                <li><a href="blog/blogindex.html">Blog</a></li>
             </ul>
         </nav>
         
         <div class="content">
+            <section>
+                <p>Hi! I'm Jyo (she/her) ✨<br>
+                    Currently, I'm a Research Assistant at The Alan Turing Institute in the Trustworthy Digital Identity Systems project researching Digital Public Goods (DPGs) with a focus in the banking/payments/commerce sectors.</p>
+                <figure>
+                    <img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/headshot.jpg"
+                        alt="Headshot of Jyotsna Iyer">
+                </figure>
+            </section>
         </div>
     </div>
     <footer>
+        <a href="https://twitter.com/jyotsna_iy"><img
+                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png"
+                alt="Twitter Logo"></a>
+        <a href="https://www.are.na/jyotsna-_iy"><img
+                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png"
+                alt="Arena Logo"></a>
+        <a href="mailto:jyotsna.iy@gmail.com"><img
+                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png"
+                alt="Gmail Logo"></a>
+        <a href="https://www.linkedin.com/in/jyotsna-iy/"><img
+                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png"
+                alt="LinkedIn Logo"></a>
+        <div class="watermark">
+            <br>
+            <a href="https://jyotsna-iy.github.io/psa">PSA</a>
+        </div>
     </footer>
     <script>
         function toggleMenu() {
             var sidenav = document.getElementById("mySidenav");
             sidenav.classList.toggle("show");
-        }
-
-        function toggleSubpages(event, element) {
-            event.preventDefault();
-            element.classList.toggle("active");
         }
     </script>
 </body>
