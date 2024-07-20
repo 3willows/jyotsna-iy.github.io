@@ -17,16 +17,22 @@ header {
 }
 
 nav {
+    background-color: transparent;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #000;
+    color: white;
     display: inline-block;
     padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b9d8ea; /* Light blue color on hover, you can adjust this */
 }
 
 section {
@@ -56,10 +62,12 @@ figure img {
 }
 
 footer {
+    background-color: transparent;
     text-align: center;
     padding: 20px;
     position: relative;
     width: 100%;
+    color: white;
 }
 
 footer img {
