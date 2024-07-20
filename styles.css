@@ -1,6 +1,10 @@
 body {
-    background-color: #b9d8ea;
+    background-image: url('https://github.com/jyotsna-iy/jyotsna-iy.github.io/blob/main/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: 'DM Mono', monospace;
+    color: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
