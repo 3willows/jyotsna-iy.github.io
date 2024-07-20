@@ -3,3 +3,4 @@ fetch('nav.html')
   .then(data => {
     document.getElementById('nav-placeholder').innerHTML = data;
   });
+ 
