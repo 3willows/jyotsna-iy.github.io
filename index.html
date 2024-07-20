@@ -5,83 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jyo</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            padding: 20px 0;
-        }
-        .container {
-            display: flex;
-            flex-direction: row;
-        }
-        .sidenav {
-            width: 250px;
-            padding: 20px;
-        }
-        .sidenav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .sidenav li {
-            margin-bottom: 10px;
-        }
-        .sidenav a {
-            text-decoration: none;
-            color: #202122;
-        }
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
-        .menu-button {
-            display: none;
-            font-size: 30px;
-            cursor: pointer;
-            padding: 10px;
-        }
-        .sidenav ul ul {
-            padding-left: 20px;
-            display: none;
-        }
-        .sidenav .has-submenu > a::after {
-            content: ' ▼';
-            font-size: 0.7em;
-        }
-        .sidenav .submenu-active > ul {
-            display: block;
-        }
-        @media screen and (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-            .sidenav {
-                width: 100%;
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 1;
-                padding-top: 100px;
-            }
-            .menu-button {
-                display: block;
-                text-align: center;
-                margin-top: 10px;
-            }
-            .show {
-                display: block;
-            }
-            .sidenav .submenu-active > ul {
-                display: block;
-            }
-        }
-    </style>
 </head>
 <body>
     <header> 
@@ -89,28 +12,8 @@
     </header>
     
     <div class="menu-button" onclick="toggleMenu()">☰</div>
-
+    <div id="nav-placeholder"></div>
     <div class="container">
-        <nav class="sidenav" id="mySidenav">
-            <ul>
-                <li><a href="https://jyotsna-iy.github.io">Home</a></li>
-                <li><a href="https://jyotsna-iy.github.io/about">preface/epilogue</a></li>
-                <li class="has-submenu">
-                    <a href="https://jyotsna-iy.github.io/work" onclick="toggleSubmenu(event, this.parentElement)">Work</a>
-                    <ul>
-                        <li><a href="https://jyotsna-iy.github.io/work/project1">Project 1</a></li>
-                        <li><a href="https://jyotsna-iy.github.io/work/project2">Project 2</a></li>
-                    </ul>
-                </li>
-                <li class="has-submenu">
-                    <a href="blog/blogindex.html" onclick="toggleSubmenu(event, this.parentElement)">Blog</a>
-                    <ul>
-                        <li><a href="blog/post1.html">Post 1</a></li>
-                        <li><a href="blog/post2.html">Post 2</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
         
         <div class="content">
             <section>
@@ -141,16 +44,6 @@
             <a href="https://jyotsna-iy.github.io/psa">PSA</a>
         </div>
     </footer>
-    <script>
-        function toggleMenu() {
-            var sidenav = document.getElementById("mySidenav");
-            sidenav.classList.toggle("show");
-        }
-
-        function toggleSubmenu(event, element) {
-            event.preventDefault();
-            element.classList.toggle("submenu-active");
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
