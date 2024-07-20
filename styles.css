@@ -1,38 +1,28 @@
 body {
-    background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #b9d8ea;
     font-family: 'DM Mono', monospace;
-    color: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     letter-spacing: 2px;
 }
-
 header {
     text-align: center;
     padding: 20px;
 }
 
 nav {
-    background-color: transparent;
+    background-color: #b9d8ea;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: white;
+    color: #000;
     display: inline-block;
     padding: 5px 0;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #b9d8ea; /* Light blue color on hover, you can adjust this */
 }
 
 section {
@@ -62,12 +52,11 @@ figure img {
 }
 
 footer {
-    background-color: transparent;
+    background-color: #b9d8ea;
     text-align: center;
     padding: 20px;
     position: relative;
     width: 100%;
-    color: white;
 }
 
 footer img {
