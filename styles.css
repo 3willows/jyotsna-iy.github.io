@@ -1,5 +1,8 @@
 body {
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'DM Mono', monospace;
     margin: 0;
     padding: 0;
@@ -14,8 +17,7 @@ header {
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
+    flex: 1;
 }
 
 .sidenav {
@@ -53,7 +55,8 @@ header {
 }
 
 .content {
-    flex: 1;
+   max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
 }
 
@@ -96,6 +99,7 @@ footer {
     padding: 20px;
     position: relative;
     width: 100%;
+    margin-top: auto;
 }
 
 footer img {
