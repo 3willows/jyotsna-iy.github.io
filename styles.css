@@ -1,5 +1,5 @@
 body {
-    background-color: #b9d8ea;
+    background-color: #ffffff;
     font-family: 'DM Mono', monospace;
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ header {
 .sidenav {
     width: 250px;
     padding: 20px;
-    background-color: #b9d8ea;
+    background-color: #ffffff;
 }
 
 .sidenav ul {
@@ -35,7 +35,7 @@ header {
 
 .sidenav a {
     text-decoration: none;
-    color: #202122;
+    color: #ffffff;
 }
 
 .sidenav ul ul {
@@ -91,7 +91,7 @@ figure img {
 }
 
 footer {
-    background-color: #b9d8ea;
+    background-color: #ffffff;
     text-align: center;
     padding: 20px;
     position: relative;
