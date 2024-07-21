@@ -24,44 +24,63 @@ header {
 }
 
 .sidenav {
-    width: 80%;
-    max-width: 600px;
+    width: 90%;
+    max-width: 1200px;
     margin: 20px auto;
-    padding: 20px;
-    background-color: #f0f0f0;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #000000;
     border-radius: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .sidenav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .sidenav li {
-    margin-bottom: 10px;
+    margin: 0 5px;
+    position: relative;
 }
 
 .sidenav a {
     text-decoration: none;
     color: #000000;
     display: block;
-    padding: 5px 0;
-}
-
-.sidenav ul ul {
-    padding-left: 20px;
-    display: none;
+    padding: 5px 10px;
+    white-space: nowrap;
 }
 
 .sidenav .has-submenu > a::after {
-    content: ' ▼';
+    content: '▼';
     font-size: 0.7em;
+    margin-left: 5px;
 }
 
-.sidenav .submenu-active > ul {
+.sidenav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    z-index: 1000;
+    padding: 5px 0;
+}
+
+.sidenav li:hover > ul {
     display: block;
+}
+
+.sidenav ul ul li {
+    width: 100%;
+    margin: 0;
 }
 
 .content {
@@ -121,8 +140,21 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
-    .sidenav {
-        width: 90%;
+    .sidenav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sidenav li {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .sidenav ul ul {
+        position: static;
+        display: none;
+        margin-left: 20px;
+        border: none;
     }
 
     .menu-button {
