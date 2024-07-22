@@ -3,40 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jyo</title>
+    <title>Jyo's Blog</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header> 
-        <h1>Jyo Iyer</h1>
+    <header>
+        <h1>Jyo's Blog</h1>
     </header>
-    
+
     <div class="menu-button" onclick="toggleMenu()">☰</div>
-    <div id="nav-placeholder"></div> 
-    
+
+    <nav class="sidenav" id="mySidenav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li class="has-submenu">
+                <a href="#">Blog</a>
+                <ul>
+                    <li><a href="#post1">Blog Post 1</a></li>
+                    <li><a href="#post2">Blog Post 2</a></li>
+                    <li><a href="#post3">Blog Post 3</a></li>
+                </ul>
+            </li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
         <div class="content">
-             <main>
-        <article>
-            <span>01/01/2023</span> <a href="https://jyotsna-iy.github.io/blog/notes.html">Notes</a>
-        </article>
-        <article>
-            <span>02/15/2023</span> <a href="https://example.com/blog-post-2">Example Blog Post 1</a>
-        </article>
-    </main>
-    
+            <section id="post1">
+                <h2>Blog Post 1</h2>
+                <p>01/01/2023</p>
+                <p>This is a summary of Blog Post 1. Click to read more.</p>
+                <a href="/blog/post1.html">Read More</a>
+            </section>
+
+            <section id="post2">
+                <h2>Blog Post 2</h2>
+                <p>02/15/2023</p>
+                <p>This is a summary of Blog Post 2. Click to read more.</p>
+                <a href="/blog/post2.html">Read More</a>
+            </section>
+
+            <section id="post3">
+                <h2>Blog Post 3</h2>
+                <p>03/30/2023</p>
+                <p>This is a summary of Blog Post 3. Click to read more.</p>
+                <a href="/blog/post3.html">Read More</a>
+            </section>
         </div>
     </div>
-    
+
     <footer>
-    <a href="https://twitter.com/jyotsna_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png" alt="Twitter Logo"></a>
-    <a href="https://www.are.na/jyotsna-_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png" alt="Arena Logo"></a>
-    <a href="mailto:jyotsna.iy@gmail.com"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png" alt="Gmail Logo"></a>
-    <a href="https://www.linkedin.com/in/jyotsna-iy/"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png" alt="LinkedIn Logo"></a>
-    <a href="https://jyotsna-iy.github.io/psa">
-        <div class="psa-image"></div>
-    </a>
-</footer>
+        <a href="https://twitter.com/jyotsna_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png" alt="Twitter Logo"></a>
+        <a href="https://www.are.na/jyotsna-_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png" alt="Arena Logo"></a>
+        <a href="mailto:jyotsna.iy@gmail.com"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png" alt="Gmail Logo"></a>
+        <a href="https://www.linkedin.com/in/jyotsna-iy/"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png" alt="LinkedIn Logo"></a>
+        <a href="/psa">
+            <div class="psa-image"></div>
+        </a>
+        <div class="watermark">
+            <a href="https://jyotsna-iy.github.io">© 2024 Jyo Iyer</a>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
+
