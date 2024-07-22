@@ -17,18 +17,39 @@
     <div class="container">
         <div class="sidebar sidenav">
             <ul>
-                <li><a href="#notes">Notes</a></li>
-                <li><a href="#example-post">Example Blog Post 1</a></li>
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#notes">Notes</a>
+                    <ul>
+                        <li><a href="#notes-sub">Notes Sub-item</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                    <ul>
+                        <li><a href="#example-post">Example Blog Post 1</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="content">
             <main>
-                <article id="notes">
-                    <span>01/01/2023</span> <a href="https://jyotsna-iy.github.io/blog/notes.html">Notes</a>
-                </article>
-                <article id="example-post">
-                    <span>02/15/2023</span> <a href="https://example.com/blog-post-2">Example Blog Post 1</a>
-                </article>
+                <section id="home">
+                    <h2>Home</h2>
+                    <p>Welcome to my website!</p>
+                </section>
+                <section id="notes">
+                    <h2>Notes</h2>
+                    <article id="notes-sub">
+                        <span>01/01/2023</span> <a href="https://jyotsna-iy.github.io/blog/notes.html">Notes</a>
+                    </article>
+                </section>
+                <section id="blog">
+                    <h2>Blog</h2>
+                    <article id="example-post">
+                        <span>02/15/2023</span> <a href="https://example.com/blog-post-2">Example Blog Post 1</a>
+                    </article>
+                </section>
             </main>
         </div>
     </div>
