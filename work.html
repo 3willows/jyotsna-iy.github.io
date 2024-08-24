@@ -1,128 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jyo</title>
-    <style>
-        body {
-            background-color: #b9d8ea;
-            font-family: 'DM Mono', monospace;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            letter-spacing: 2px;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        nav {
-            background-color: #b9d8ea;
-            text-align: center;
-            padding: 5px;
-        }
-
-        nav a {
-            margin: 0 30px;
-            text-decoration: none;
-            color: #000;
-        }
-
-        section {
-            display: flex;
-            flex-direction: column-reverse; /* Display content in reverse chronological order */
-            padding: 20px;
-            text-align: left;
-        }
-
-        section p {
-            font-size: 20px;
-            margin-bottom: 30px; /* Adjust margin */
-            padding: 0 100px; /* Adjust padding */
-        }
-
-        footer {
-            background-color: #b9d8ea;
-            text-align: center;
-            padding: 30px;
-            position: relative;
-            bottom: 15px;
-            width: 100%;
-        }
-
-        footer img {
-            width: 30px;
-            margin: 0 4cm;
-            vertical-align: middle;
-        }
-
-        watermark {
-            margin-right: 0.5em;
-            margin-top: 1em;
-            opacity: 0.3;
-            color: #888;
-            font-size: 12px;
-            font-family: 'DM Mono', monospace;
-        }
-
-        .watermark a {
-            text-decoration: none;
-            color: #888;
-        }
-
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jyo - Work</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>Jyotsna Iyer</h1>
+    <header> 
+        <h1>Jyo Iyer</h1>
     </header>
-
-    <nav>
-        <a href="https://jyotsna-iy.github.io">Home</a>
-        <a href="https://jyotsna-iy.github.io/about">About</a>
-        <a href="https://jyotsna-iy.github.io/work">Work</a>
-        <a href="https://jyotsna.bearblog.dev/">Blog</a>
-    </nav>
-
-    <section>
-        <p> 
-            [July] Presented at Data Materialities: Critiques and Infrastructures at Cambridge Digital Humanities
-            [May]  Particpant in the Digital Doppelgangers workshop hosted by Data and Society 
-            [February - March] Mentor for the Technology and Globalization cohort for the edition of the Reboot Student Fellowship
-        </p>
-        <p>2023</p>
-        <p>Did I mention that I am a fan of (non-numbered) lists?</p>
-        <br>
-        <p>(Coming soon - an exhaustive resume for archival ppurposes)</p>
-        <br>
-        <p>This is my <a href="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/CV - Jyotsna Iyer.pdf" target="_blank">CV (Professional)</a>.</p>
-        <br>
-        <p>Though my academic training has been in Political Science, English Literature and Digital Humanities, my current work (Digital ID) utlizes field like Science and
-            Technology Studies (STS) and Sociology to anlayse better ways to utlise digital technology for social welfare. Utlimatlely, I would like to work in and with organizations 
-            that improve or create public interest based digital technologies. As an independent researcher, my focus expands and draws from fields like forensic architecture, archival studies 
-            and literary studies to experiment with newer ways of approaching technology solutions and problems. This is an attempt at documenting the various engagements I have participated in
-            over the years and it also serves as a canvas to reflect on my work in real time. </p>
-        <br>
-        <p> Sometimes the internet breaks, leaks, and glitches. Thankfully the Wayback Machine and other resources make it easier to capture the ephemeral.</p> 
-    </section>
-
+    
+    <div class="menu-button" onclick="toggleMenu()">☰</div>
+    <div id="nav-placeholder"></div> 
+    
+    <div class="container">
+        <div class="content">
+            <section>
+                <p>2023</p>
+                <p> 
+                    [July] Presented at Data Materialities: Critiques and Infrastructures at Cambridge Digital Humanities<br>
+                    [May] Participant in the Digital Doppelgangers workshop hosted by Data and Society<br>
+                    [February - March] Mentor for the Technology and Globalization cohort for the edition of the Reboot Student Fellowship
+                </p>
+                <p>Did I mention that I am a fan of (non-numbered) lists?</p>
+                <p>(Coming soon - an exhaustive resume for archival purposes)</p>
+                <p>This is my <a href="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/CV - Jyotsna Iyer.pdf" target="_blank">CV (Professional)</a>.</p>
+                <p>Though my academic training has been in Political Science, English Literature and Digital Humanities, my current work (Digital ID) utilizes fields like Science and Technology Studies (STS) and Sociology to analyze better ways to utilize digital technology for social welfare. Ultimately, I would like to work in and with organizations that improve or create public interest based digital technologies. As an independent researcher, my focus expands and draws from fields like forensic architecture, archival studies and literary studies to experiment with newer ways of approaching technology solutions and problems. This is an attempt at documenting the various engagements I have participated in over the years and it also serves as a canvas to reflect on my work in real time.</p>
+                <p>Sometimes the internet breaks, leaks, and glitches. Thankfully the Wayback Machine and other resources make it easier to capture the ephemeral.</p> 
+            </section>
+        </div>
+    </div>
+    
     <footer>
         <a href="https://twitter.com/jyotsna_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png" alt="Twitter Logo"></a>
         <a href="https://www.are.na/jyotsna-_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png" alt="Arena Logo"></a>
         <a href="mailto:jyotsna.iy@gmail.com"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png" alt="Gmail Logo"></a>
         <a href="https://www.linkedin.com/in/jyotsna-iy/"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png" alt="LinkedIn Logo"></a>
-        <div class="watermark">
-        <br>
-            <a href="https://jyotsna-iy.github.io/psa">PSA</a>
-        </div>
+        <a href="https://jyotsna-iy.github.io/psa">
+            <div class="psa-image"></div>
+        </a>
     </footer>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
