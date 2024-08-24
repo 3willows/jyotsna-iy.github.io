@@ -1,135 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/style.css">
-     <title>Jyo</title>
-    <style>
-        body {
-            background-color: #b9d8ea;
-            font-family: 'DM Mono', monospace;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            letter-spacing: 2px;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        nav {
-            background-color: #b9d8ea;
-            text-align: center;
-            padding: 5px;
-        }
-
-        nav a {
-            margin: 0 30px;
-            text-decoration: none;
-            color: #000;
-        }
-
-        section {
-            display: flex; 
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 20px;
-        }
-
-        section p {
-            flex: 1; 
-            font-size: 17px;
-            margin: 10px;
-            text-align: left;
-        }
-
-        footer {
-            background-color: #b9d8ea;
-            text-align: center;
-            padding: 30px;
-            position: fixed;
-            bottom: 15px;
-            width: 100%;
-        }
-
-        footer img {
-            width: 30px;     
-            margin: 0 4cm;
-            vertical-align: middle; 
-        }
-
-           watermark {
-            margin-right: 0.5em; /* Add margin to the right */
-              margin-top: 1em; 
-            opacity: 0.3; /* Adjust opacity as needed */
-            color: #888; /* Adjust color as needed */
-            font-size: 12px; /* Adjust font size as needed */
-            font-family: 'DM Mono', monospace; /* Use DM Mono font */
-        }
-
-        .watermark a {
-            text-decoration: none;
-            color: #888; /* Ensure link color is grey */
-        }
-  
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Jyo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
     <header> 
-        <h1>Jyotsna Iyer</h1>
+        <h1>Jyo Iyer</h1>
     </header>
-
-    <nav>
-        <a href="https://jyotsna-iy.github.io">Home</a>
-        <a href="https://jyotsna-iy.github.io/about">About</a>
-        <a href="https://jyotsna-iy.github.io/work">Work</a>
-        <a href="https://jyotsna.bearblog.dev/">Blog</a>
-    </nav>
-
-    <section>
     
-        <p>My current research interests are broadly around digital identity systems, internet governance, platform economy, and open-source software.<br> 
-         <br>    
-         I am highly interested in opportunities where I can experiment with the arts, humanities, and technology studies as an independent researcher outside of work. For full-time roles I want to pursue projects that use the social sciences to inform technology/technology policy.</p> 
-         
-        <p>Professional Bio</p>
-        <br>
-        <p>Jyotsna Iyer is a Research Assistant (Trustworthy Digital Infrastructure for Identity Systems) at The Alan Turing Institute. She has a Bachelor of Arts in Political Science and English Literature from 
-        St. Stephen’s College, University of Delhi. She also has a Master of Science in Digital Humanities from University College London. Her research interests are interdisciplinary in nature, combining domains like computer science, science and technology studies, 
-        political science, and philosophy.</p>
-        
-         <p>Independent Researcher/Artist Bio</p>
-         <br>
-         <p>always wishes she is by the sea. mostly studying about technology, politics and culture but thinking about language and literature. proponent of interdisciplinary studies and pushing oneself to play with dirt.</p>
-
-    </section>
-
+    <div class="menu-button" onclick="toggleMenu()">☰</div>
+    <div id="nav-placeholder"></div> 
+    
+    <div class="container">
+        <div class="content">
+            <section>
+                <h2>About Me</h2>
+                <p>My current research interests are broadly around digital identity systems, internet governance, platform economy, and open-source software.</p>
+                <p>I am highly interested in opportunities where I can experiment with the arts, humanities, and technology studies as an independent researcher outside of work. For full-time roles I want to pursue projects that use the social sciences to inform technology/technology policy.</p>
+                
+                <h3>Professional Bio</h3>
+                <p>Jyotsna Iyer is a Research Assistant (Trustworthy Digital Infrastructure for Identity Systems) at The Alan Turing Institute. She has a Bachelor of Arts in Political Science and English Literature from St. Stephen's College, University of Delhi. She also has a Master of Science in Digital Humanities from University College London. Her research interests are interdisciplinary in nature, combining domains like computer science, science and technology studies, political science, and philosophy.</p>
+                
+                <h3>Independent Researcher/Artist Bio</h3>
+                <p>Always wishes she is by the sea. Mostly studying about technology, politics and culture but thinking about language and literature. Proponent of interdisciplinary studies and pushing oneself to play with dirt.</p>
+            </section>
+        </div>
+    </div>
+    
     <footer>
-        <a href="https://twitter.com/jyotsna_iy"><img
-                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png"
-                alt="Twitter Logo"></a>
-        <a href="https://www.are.na/jyotsna-_iy"><img
-                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png"
-                alt="Arena Logo"></a>
-        <a href="mailto:jyotsna.iy@gmail.com"><img
-                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png"
-                alt="Gmail Logo"></a>
-        <a href="https://www.linkedin.com/in/jyotsna-iy/"><img
-                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png"
-                alt="LinkedIn Logo"></a>
-        <div class="watermark">
-        <br>
-        <a href="https://jyotsna-iy.github.io/psa">PSA</a>
-            
+        <a href="https://twitter.com/jyotsna_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png" alt="Twitter Logo"></a>
+        <a href="https://www.are.na/jyotsna-_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png" alt="Arena Logo"></a>
+        <a href="mailto:jyotsna.iy@gmail.com"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png" alt="Gmail Logo"></a>
+        <a href="https://www.linkedin.com/in/jyotsna-iy/"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png" alt="LinkedIn Logo"></a>
+        <a href="https://jyotsna-iy.github.io/psa">
+            <div class="psa-image"></div>
+        </a>
     </footer>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
-
