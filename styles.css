@@ -21,6 +21,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .sidenav {
@@ -84,7 +87,8 @@ header {
 }
 
 .content {
-    max-width: 800px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -107,8 +111,9 @@ section {
 section p {
     font-size: 18px;
     margin: 20px 0;
-    padding: 20px;
+    padding: 20px 0;
     text-align: left;
+    width: 100%;
 }
 
 footer {
@@ -183,8 +188,8 @@ footer img {
 
 @media screen and (min-width: 769px) {
     section p {
-        font-size: 25px;
-        padding: 100px;
+        font-size: 20px;
+        padding: 20px 0;
     }
 
     footer img {
