@@ -1,139 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Jyo</title>
-    <style>
-        body {
-            background-color: #b9d8ea;
-            font-family: 'DM Mono', monospace;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            letter-spacing: 2px;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        nav {
-            background-color: #b9d8ea;
-            text-align: center;
-            padding: 5px;
-        }
-
-        nav a {
-            margin: 0 30px;
-            text-decoration: none;
-            color: #000;
-        }
-
-        section {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            text-align: center;
-        }
-
-        section p {
-            flex: 1;
-            font-size: 25px;
-            margin: 30;
-            padding: 100px;
-            text-align: center;
-        }
-
-        figure {
-            flex: 1;
-            margin: 0 0 20px 20px;
-            padding-right: 45px;
-            border-radius: 10px; 
-        }
-        figure img {
-            width: 70%; 
-            max-width: 300px;
-            border-radius: 10px;
-        }
-
-        footer {
-            background-color: #b9d8ea;
-            text-align: center;
-            padding: 30px;
-            position: fixed;
-            bottom: 15px;
-            width: 100%;
-        }
-
-        footer img {
-            width: 30px;
-            margin: 0 4cm;
-            vertical-align: middle; 
-        }
-          
-        watermark {
-            margin-right: 0.5em; /* Add margin to the right */
-              margin-top: 1em; 
-            opacity: 0.3; /* Adjust opacity as needed */
-            color: #888; /* Adjust color as needed */
-            font-size: 12px; /* Adjust font size as needed */
-            font-family: 'DM Mono', monospace; /* Use DM Mono font */
-        }
-
-        .watermark a {
-            text-decoration: none;
-            color: #888; /* Ensure link color is grey */
-        }
-  
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jyo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <header> 
-        <h1>Jyotsna Iyer</h1>
-        </a>
+    <header style="margin-bottom: 10px;"> 
+        <h1>Jyo Iyer</h1>
     </header>
-
-    <nav>
-        <a href="https://jyotsna-iy.github.io">Home</a>
-        <a href="https://jyotsna-iy.github.io/about">About</a>
-        <a href="https://jyotsna-iy.github.io/work">Work</a>
-        <a href="https://jyotsna.bearblog.dev/">Blog</a>
-    </nav>
-
-    <section>
     
+    <div class="menu-button" onclick="toggleMenu()" style="margin-bottom: 10px;">☰</div>
+    <div id="nav-placeholder" style="margin-bottom: 10px;"></div> 
+    
+    <div class="container" style="margin-top: 0; padding-top: 0;">
+        <div class="content" style="text-align: left; margin-top: 0; padding-top: 0;">
+            <section>
         <p>1. This is not a professional website, this is a website about my profession</p>
         <br>
         <p>2. CC BY-NC 4.0 Deed applies to jyotsna-iy.github.io and jyotsna.bearblog.dev</p> 
         <br>
         <p>3. After you peruse this website, it is mandatory to take a walk (not on a treadmill)</p>
-    </section>
-
+            </section>
+        </div>
+    </div>
+    
     <footer>
-        <a href="https://twitter.com/jyotsna_iy"><img
-                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png"
-                alt="Twitter Logo"></a>
-        <a href="https://www.are.na/jyotsna-_iy"><img
-                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png"
-                alt="Arena Logo"></a>
-        <a href="mailto:jyotsna.iy@gmail.com"><img
-                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png"
-                alt="Gmail Logo"></a>
-        <a href="https://www.linkedin.com/in/jyotsna-iy/"><img
-                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png"
-                alt="LinkedIn Logo"></a>
-         <div class="watermark">
-         <br>
-         <a href="https://jyotsna-iy.github.io/psa">PSA</a>
+        <a href="https://twitter.com/jyotsna_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png" alt="Twitter Logo"></a>
+        <a href="https://www.are.na/jyotsna-_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png" alt="Arena Logo"></a>
+        <a href="mailto:jyotsna.iy@gmail.com"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png" alt="Gmail Logo"></a>
+        <a href="https://www.linkedin.com/in/jyotsna-iy/"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png" alt="LinkedIn Logo"></a>
+        <a href="https://jyotsna-iy.github.io/psa">
+            <div class="psa-image"></div>
+        </a>
     </footer>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
-
-
