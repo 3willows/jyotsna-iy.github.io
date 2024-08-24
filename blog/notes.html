@@ -4,153 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jyo</title>
-    <style>
-        body {
-            display: flex;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .sidebar {
-            width: 250px;
-            height: 100vh;
-            position: fixed;
-            left: 0;
-            top: 0;
-            background-color: #f1f1f1;
-            padding: 20px;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .sidebar-header {
-            margin-bottom: 20px;
-        }
-
-        .sidebar nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .sidebar nav ul li {
-            margin-bottom: 10px;
-        }
-
-        .sidebar-footer {
-            margin-top: auto;
-        }
-
-        .main-content {
-            margin-left: 250px;
-            padding: 20px;
-            width: calc(100% - 250px);
-        }
-
-        .menu-button {
-            display: none;
-            cursor: pointer;
-            font-size: 24px;
-        }
-
-        .nested {
-            margin-left: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .sidebar {
-                transform: translateX(-100%);
-                transition: transform 0.3s ease-in-out;
-            }
-
-            .sidebar.active {
-                transform: translateX(0);
-            }
-
-            .main-content {
-                margin-left: 0;
-                width: 100%;
-            }
-
-            .menu-button {
-                display: block;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="sidebar-header">
-            <h1>Jyo Iyer</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a>
-                    <ul class="nested">
-                        <li><a href="#blog/tech">Tech</a></li>
-                        <li><a href="#blog/lifestyle">Lifestyle</a></li>
-                    </ul>
-                </li>
-                <li><a href="#projects">Projects</a>
-                    <ul class="nested">
-                        <li><a href="#projects/web">Web Development</a></li>
-                        <li><a href="#projects/data">Data Analysis</a></li>
-                    </ul>
-                </li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="sidebar-footer">
-            <a href="https://twitter.com/jyotsna_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png" alt="Twitter Logo"></a>
-            <a href="https://www.are.na/jyotsna-_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png" alt="Arena Logo"></a>
-            <a href="mailto:jyotsna.iy@gmail.com"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png" alt="Gmail Logo"></a>
-            <a href="https://www.linkedin.com/in/jyotsna-iy/"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png" alt="LinkedIn Logo"></a>
-            <a href="/psa">
-                <div class="psa-image"></div>
-            </a>
+    <header style="margin-bottom: 10px;"> 
+        <h1>Jyo's Notes</h1>
+    </header>
+    
+    <div class="menu-button" onclick="toggleMenu()" style="margin-bottom: 10px;">☰</div>
+    <div id="nav-placeholder" style="margin-bottom: 10px;"></div> 
+    
+    <div class="container" style="margin-top: 0; padding-top: 0;">
+        <div class="content" style="text-align: left; margin-top: 0; padding-top: 0;">
+            <section>
+                <p style="margin-top: 0;">Test<br></p>
+            </section>
         </div>
     </div>
-
-    <div class="main-content">
-        <div class="menu-button" onclick="toggleSidebar()">☰</div>
-        <div id="content">
-            <!-- Content will be loaded here -->
-        </div>
-    </div>
-
-    <script>
-        function toggleSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.classList.toggle('active');
-        }
-
-        const routes = {
-            'home': 'Welcome to my website!',
-            'about': 'I am Jyo Iyer, a passionate developer and data scientist.',
-            'blog': 'Welcome to my blog!',
-            'blog/tech': 'Here are my latest tech blog posts...',
-            'blog/lifestyle': 'Here are my latest lifestyle blog posts...',
-            'projects': 'Check out my projects!',
-            'projects/web': 'Here are my web development projects...',
-            'projects/data': 'Here are my data analysis projects...',
-            'contact': 'Get in touch with me at jyotsna.iy@gmail.com'
-        };
-
-        function loadContent(route) {
-            const content = document.getElementById('content');
-            content.innerHTML = routes[route] || 'Page not found';
-        }
-
-        function handleRoute() {
-            const hash = window.location.hash.substring(1) || 'about';
-            loadContent(hash);
-        }
-
-        window.addEventListener('hashchange', handleRoute);
-        window.addEventListener('load', handleRoute);
-    </script>
+    
+    <footer>
+        <a href="https://twitter.com/jyotsna_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png" alt="Twitter Logo"></a>
+        <a href="https://www.are.na/jyotsna-_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png" alt="Arena Logo"></a>
+        <a href="mailto:jyotsna.iy@gmail.com"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png" alt="Gmail Logo"></a>
+        <a href="https://www.linkedin.com/in/jyotsna-iy/"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png" alt="LinkedIn Logo"></a>
+        <a href="https://jyotsna-iy.github.io/psa">
+            <div class="psa-image"></div>
+        </a>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
