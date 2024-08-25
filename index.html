@@ -3,11 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jyo</title>
+    <title>Jyo - Work Timeline</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .timeline {
+            position: relative;
+            margin: 40px 0;
+            padding-left: 50%;
+            text-align: center;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background-color: #000;
+            transform: translateX(-50%);
+        }
+        .event {
+            position: relative;
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        .event-left {
+            text-align: right;
+            padding-right: 60%;
+        }
+        .event-right {
+            text-align: left;
+            padding-left: 60%;
+        }
+        .event::before {
+            content: attr(data-date);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            padding: 2px 8px;
+            border-radius: 5px;
+            border: 1px solid #000;
+        }
+    </style>
 </head>
 <body>
-    <header> 
+    <header>
         <h1>Jyo Iyer</h1>
     </header>
     
@@ -16,22 +70,91 @@
     
     <div class="container">
         <div class="content">
-            <section>
-                <p>Hi! I'm Jyo (she/her) ✨<br>
-                    Currently, I'm a Research Assistant at The Alan Turing Institute in the Trustworthy Digital Identity Systems project researching Digital Public Goods (DPGs) with a focus in the banking/payments/commerce sectors.</p>
+            <section class="timeline">
+                <h2>CV Timeline</h2>
+                
+                <div class="event event-left" data-date="Jan 2019">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                
+                <div class="event event-right" data-date="Mar 2019">
+                    <p>Phasellus vel nibh ac urna dictum aliquet non nec ligula.</p>
+                </div>
+                
+                <div class="event event-left" data-date="Sep 2019">
+                    <p>Mauris efficitur, dui non feugiat vehicula, justo nunc facilisis purus.</p>
+                </div>
+                
+                <div class="event event-right" data-date="Jan 2020">
+                    <p>Donec sed odio et eros hendrerit auctor.</p>
+                </div>
+                
+                <div class="event event-left" data-date="Jun 2020">
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+                </div>
+
+                <div class="event event-right" data-date="Jan 2024">
+                    <p>Curabitur id elit ut nulla varius ultricies.</p>
+                </div>
+
+                <div class="event event-left" data-date="Feb 2024">
+                    <p>Aenean vehicula lacus at massa laoreet facilisis.</p>
+                </div>
+
+                <div class="event event-right" data-date="Mar 2024">
+                    <p>Aliquam erat volutpat. Integer vulputate, turpis in aliquet.</p>
+                </div>
+
+                <div class="event event-left" data-date="Apr 2024">
+                    <p>Ut scelerisque, magna et tincidunt venenatis, justo urna dictum.</p>
+                </div>
+
+                <div class="event event-right" data-date="May 2024">
+                    <p>Morbi cursus, felis ut sodales pretium, augue erat vulputate.</p>
+                </div>
+
+                <div class="event event-left" data-date="Jun 2024">
+                    <p>Quisque vitae eros ac velit sagittis gravida.</p>
+                </div>
+
+                <div class="event event-right" data-date="Jul 2024">
+                    <p>Vivamus condimentum, sapien nec bibendum pharetra.</p>
+                </div>
+
+                <div class="event event-left" data-date="Aug 2024">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                </div>
+
+                <div class="event event-right" data-date="Sep 2024">
+                    <p>Accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+
+                <div class="event event-left" data-date="Oct 2024">
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+                </div>
+
+                <div class="event event-right" data-date="Nov 2024">
+                    <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.</p>
+                </div>
+
+                <div class="event event-left" data-date="Dec 2024">
+                    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse.</p>
+                </div>
             </section>
         </div>
     </div>
     
     <footer>
-    <a href="https://twitter.com/jyotsna_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png" alt="Twitter Logo"></a>
-    <a href="https://www.are.na/jyotsna-_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png" alt="Arena Logo"></a>
-    <a href="mailto:jyotsna.iy@gmail.com"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png" alt="Gmail Logo"></a>
-    <a href="https://www.linkedin.com/in/jyotsna-iy/"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png" alt="LinkedIn Logo"></a>
-    <a href="https://jyotsna-iy.github.io/psa">
-        <div class="psa-image"></div>
-    </a>
-</footer>
+        <a href="https://twitter.com/jyotsna_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png" alt="Twitter Logo"></a>
+        <a href="https://www.are.na/jyotsna-_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png" alt="Arena Logo"></a>
+        <a href="mailto:jyotsna.iy@gmail.com"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png" alt="Gmail Logo"></a>
+        <a href="https://www.linkedin.com/in/jyotsna-iy/"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png" alt="LinkedIn Logo"></a>
+        <a href="https://jyotsna-iy.github.io/psa">
+            <div class="psa-image"></div>
+        </a>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
+
