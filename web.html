@@ -19,6 +19,137 @@
             <section>
                 <p>Researchers and Scholars<br></p>
             </section>
+
+            <section>
+                <h2>Researchers</h2>
+                <table border="1" id="researcherTable">
+                    <thead>
+                        <tr>
+                            <th>Researcher/Scholar</th>
+                            <th>Thematic Interest</th>
+                            <th>URL</th>
+                            <th>IRL</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+    
+    <footer>
+        <a href="https://twitter.com/jyotsna_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png" alt="Twitter Logo"></a>
+        <a href="https://www.are.na/jyotsna-_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png" alt="Arena Logo"></a>
+        <a href="mailto:jyotsna.iy@gmail.com"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/gmail.png" alt="Gmail Logo"></a>
+        <a href="https://www.linkedin.com/in/jyotsna-iy/"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png" alt="LinkedIn Logo"></a>
+        <a href="https://jyotsna-iy.github.io/psa">
+            <div class="psa-image"></div>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    const researcherData = [
+        { name: "Nancy Mauro-Flude" },
+        { name: "Sarah Shin" },
+        { name: "Ben Vickers" },
+        { name: "Tripta Chandola" },
+        { name: "Silvia Lorusso" },
+        { name: "Maya Indira Ganesh" },
+        { name: "Wendi Yan" },
+        { name: "Ruha Benjamin" },
+        { name: "Aris Komporozos-Athanasiou" },
+        { name: "Hito Steyrl" },
+        { name: "Deborah Raji" },
+        { name: "Mindy Seu" },
+        { name: "Rumman Chowdhury" },
+        { name: "Valeria Ferrari" },
+        { name: "Geert Lovink" },
+        { name: "Wendi Yan" },
+        { name: "Peli Grietzer" },
+        { name: "Caroline Basset" },
+        { name: "Idil Galip" },
+        { name: "Adam Crymble" },
+        { name: "Spencer Chang" },
+        { name: "Alicia Guo" },
+        { name: "Saffron Huang" },
+        { name: "Matthew Sun" },
+        { name: "Jessica Dai" },
+        { name: "Eyal Weisman" },
+        { name: "Karen Gregory" },
+        { name: "Noopur Raval" },
+        { name: "Ashok Sukumaran" },
+        { name: "Shaina Anand" },
+        { name: "Ravi Sundaram" },
+        { name: "Shannon Mattern" },
+        { name: "Lucan Sin" },
+        { name: "Chia Amisola" },
+        { name: "Xiaowei Wang" },
+        { name: "Crystal Abidin" },
+        { name: "Sandeep Mertia" },
+        { name: "Melissa Terras" },
+        { name: "Jonathan Gray" },
+        { name: "Jeffrey Schnapp" },
+        { name: "Avani Tandon Vieira" },
+        { name: "Sofia Karim" },
+        { name: "Dibyaduti Roy" },
+        { name: "Miriam Posner" },
+        { name: "Quinn Dombrowski" },
+        { name: "Roopika Risam" },
+        { name: "Jajwalya Karajgikar" },
+        { name: "Dhanashree Thorat" },
+        { name: "Sadia Khatri" },
+        { name: "Aarman Roy Akademie Mag" },
+        { name: "Shaunak Sen" },
+        { name: "Ashish Avikunthak" },
+        { name: "Anand Patwardhan" },
+        { name: "Janice Pariat" }
+    ];
+
+    const tableBody = document.querySelector("#researcherTable tbody");
+
+    function renderTable() {
+        tableBody.innerHTML = "";
+        researcherData.forEach(researcher => {
+            const row = tableBody.insertRow();
+            row.insertCell().textContent = researcher.name;
+            row.insertCell().textContent = researcher.thematicInterest || "";
+            const urlCell = row.insertCell();
+            if (researcher.url) {
+                const link = document.createElement('a');
+                link.href = researcher.url;
+                link.textContent = 'Profile';
+                urlCell.appendChild(link);
+            }
+            row.insertCell().textContent = researcher.irl || "";
+            row.insertCell().textContent = researcher.remarks || "";
+        });
+    }
+
+    function updateResearcher(name, updates) {
+        const researcher = researcherData.find(r => r.name === name);
+        if (researcher) {
+            Object.assign(researcher, updates);
+            renderTable();
+        }
+    }
+
+    function addResearcher(name, thematicInterest = "", url = "", irl = "", remarks = "") {
+        researcherData.push({ name, thematicInterest, url, irl, remarks });
+        renderTable();
+    }
+
+    // Initial render
+    renderTable();
+
+    // is this how I add researchers????? god 
+    // updateResearcher("Nancy Mauro-Flude", { thematicInterest: "Digital Art", url: "https://example.com/nancy", irl: "Australia", remarks: "Focuses on feminist approaches to technology" });
+    // addResearcher("New Researcher", "AI Ethics", "https://example.com/new", "New York", "Specializes in AI policy");
+    </script>
+            
         </div>
     </div>
     
