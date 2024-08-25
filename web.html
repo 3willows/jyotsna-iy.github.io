@@ -117,11 +117,12 @@
             const row = tableBody.insertRow();
             row.insertCell().textContent = researcher.name;
             row.insertCell().textContent = researcher.thematicInterest || "";
+            
             const urlCell = row.insertCell();
             if (researcher.url) {
                 const link = document.createElement('a');
                 link.href = researcher.url;
-                link.textContent = 'Profile';
+                link.textContent = researcher.linkText || 'Profile'; 
                 urlCell.appendChild(link);
             }
             row.insertCell().textContent = researcher.irl || "";
@@ -137,7 +138,7 @@
         }
     }
 
-    function addResearcher(name, thematicInterest = "", url = "", irl = "", remarks = "") {
+    function addResearcher(name, thematicInterest = "", url = "", linkText = "",  irl = "", remarks = "") {
         researcherData.push({ name, thematicInterest, url, irl, remarks });
         renderTable();
     }
