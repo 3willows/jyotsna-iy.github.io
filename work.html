@@ -5,83 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jyo - Work</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .timeline {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            position: relative;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background-color: #000;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .event {
+            position: relative;
+            width: 50%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        .event-left {
+            text-align: right;
+            border-right: 2px solid transparent;
+        }
+        .event-right {
+            text-align: left;
+            border-left: 2px solid transparent;
+        }
+        .month {
+            margin-top: 20px;
+            display: block;
+        }
+        .year {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <header> 
         <h1>Jyo Iyer</h1>
     </header>
     
-    <div class="menu-button" onclick="toggleMenu()">☰</div>
-    <div id="nav-placeholder"></div> 
-    
     <div class="container">
-        <div class="content">
         <section>
-       <h2>CV Timeline</h2>
-    <div style="display: flex; justify-content: center;">
-        <div style="width: 300px; text-align: right; padding-right: 10px;">
-            <span style="display: block; margin-top: 20px;">Full-time job at The Alan Turing Institute</span>
-        </div>
-        <div style="text-align: center; border-left: 1px solid #000; border-right: 1px solid #000; padding: 0 10px;">
-2024 --+
-       |
-       |
-Jan ---+
-       |
-       |
-Feb ---+
-       |
-       |
-Mar ---+
-       |
-       |
-Apr ---+
-       |
-       |
-May ---+
-       |
-       |
-Jun ---+
-       |
-       |
-Jul ---+
-       |
-       |
-Aug ---+
-       |
-       |
-Sep ---+
-       |
-       |
-Oct ---+
-       |
-       |
-Nov ---+
-       |
-       |
-Dec ---+
-       |
-       |
-2023 --+
-       |
-       |
-Jan ---+
-       |
-       |
-Feb ---+
-       |
-       |
-Mar ---+
-        </div>
-        <div style="width: 300px; text-align: left; padding-left: 10px;">
-            <span style="display: block; margin-top: 20px;">Course at School for Poetic Computation</span>
-        </div>
-    </div>
-</section>
-                    </div>
+            <h2>CV Timeline</h2>
+            <div class="timeline">
+                <div class="event event-left">
+                    <div class="year">2024</div>
+                    <div class="month">Jan - Full-time job at The Alan Turing Institute</div>
+                    <div class="month">Mar</div>
+                    <div class="month">May</div>
+                    <div class="month">Jul</div>
+                    <div class="month">Sep</div>
+                    <div class="month">Nov</div>
                 </div>
-            </section>
-        </div>
+                <div class="event event-right">
+                    <div class="year">2024</div>
+                    <div class="month">Jan - Course at School for Poetic Computation</div>
+                    <div class="month">Feb</div>
+                    <div class="month">Apr</div>
+                    <div class="month">Jun</div>
+                    <div class="month">Aug</div>
+                    <div class="month">Oct</div>
+                    <div class="month">Dec</div>
+                </div>
+            </div>
+        </section>
     </div>
     
     <footer>
@@ -93,6 +97,6 @@ Mar ---+
             <div class="psa-image"></div>
         </a>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
+
