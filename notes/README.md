@@ -24,6 +24,6 @@ test
 
 Currently, I'm pursuing a fellowship at Newspeak House. Click links, jump into rabbit holes.&#x20;
 
-{% embed url="https://jyo-iyer.gitbook.io/newspeakhousefellowship" %}
+
 
 metadata/annotation guidance&#x20;
