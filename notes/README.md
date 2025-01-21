@@ -24,6 +24,4 @@ Currently, I'm pursuing a fellowship at Newspeak House. Click links, jump into r
 
 
 
-{% embed url="https://jyo-iyer.gitbook.io/newspeakhousefellowship/" %}
-
 metadata/annotation guidance
