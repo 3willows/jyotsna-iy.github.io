@@ -1,5 +1,7 @@
 body {
-    background-color: #b9d8ea;
+    background-color: #b9d8ea; 
+    background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/cyanotype_anne_atkins.jpeg');
+    background-size: cover; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
