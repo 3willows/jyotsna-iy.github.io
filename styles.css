@@ -1,7 +1,7 @@
 body {
     background-color: #b9d8ea; 
     background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/cyanotype_anne_atkins.jpg');
-    background-size: cover; 
+    background-size: contain;
     background-attachment: fixed; 
     display: flex;
     flex-direction: column;
@@ -128,7 +128,7 @@ section p {
 
 footer {
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     width: 100%;
     margin-top: auto; 
     color: #ffffff; 
@@ -151,11 +151,12 @@ footer img {
 }
 
 .watermark {
-    margin-top: 1em;
+    margin-top: 0.5em;
     opacity: 0.3;
     color: #888;
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'DM Mono', monospace;
+    line-height: 1.2;
 }
 
 .watermark a {
@@ -206,4 +207,3 @@ footer img {
         margin: 0 2cm;
     }
 }
-
