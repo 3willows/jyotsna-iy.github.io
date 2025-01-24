@@ -127,14 +127,12 @@ section p {
 }
 
 footer {
-    background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/cyanotype_anne_atkins.jpg');
     text-align: center;
     padding: 20px;
     width: 100%;
     margin-top: auto;
-    color: #ffffff; /* Footer text in white */
-    background-size: cover; /* Ensure background seamlessly spans */
-    background-position: center; /* Center background for a clean look */
+    color: #ffffff; 
+    background: transparent; 
 }
 
 footer img {
