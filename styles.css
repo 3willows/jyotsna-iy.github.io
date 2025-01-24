@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
-    font-family: 'DM Mono', monospace;
+    font-family: 'Fira Sans Condensed', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -222,5 +222,11 @@ footer img {
     footer img {
         margin: 0 2cm;
     }
+ @font-face {
+    font-family: 'Fira Sans Condensed';
+    src: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/FiraSansCondensed-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 }
 
