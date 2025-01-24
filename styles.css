@@ -116,7 +116,7 @@ section {
     align-items: center;
     padding: 20px;
     text-align: left;
-    color: #ffffff;
+    color: #000000;
 }
 
 section p {
@@ -125,7 +125,7 @@ section p {
     padding: 20px 0;
     text-align: left;
     width: 100%;
-    color: #ffffff;
+    color: #000000;
 }
 
 footer {
