@@ -2,16 +2,17 @@ body {
     background-color: #b9d8ea; 
     background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/cyanotype_anne_atkins.jpg');
     background-size: cover; 
+    background-attachment: fixed; 
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; 
     font-family: 'DM Mono', monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     letter-spacing: 2px;
     text-align: center;
-    color: #ffffff;
+    color: #ffffff; 
 }
 
 header {
@@ -130,9 +131,10 @@ footer {
     text-align: center;
     padding: 20px;
     width: 100%;
-    margin-top: auto;
+    margin-top: auto; 
     color: #ffffff; 
-    background: transparent; 
+    background: none;
+    background-color: transparent;
 }
 
 footer img {
