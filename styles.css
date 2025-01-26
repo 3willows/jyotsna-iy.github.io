@@ -233,5 +233,19 @@ footer img {
     font-weight: normal;
     font-style: normal;
 }
+    .text-image-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.image-content {
+    flex-shrink: 0;
+}
+
 }
 
