@@ -4,26 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jyo</title>
-    <style>
-        .text-image-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        .text-content {
-            flex: 1;
-            text-align: left;
-        }
-        .image-content img {
-            width: 200px; /* Adjust as needed */
-            height: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header aria-label="Jyotsna Iyer"></header>
     
-    <div class="container">
+    <div class="menu-button" onclick="toggleMenu()">☰</div>
+    <div id="nav-placeholder"></div> 
+    
+   <div class="container">
         <div class="content">
             <section class="text-image-section">
                 <div class="text-content">
@@ -36,7 +25,8 @@
                 </div>
                 <div class="image-content">
                     <img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/currenttbr.png" 
-                         alt="Currently Reading">
+                         alt="Currently Reading" 
+                         style="width: 200px; height: auto; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                 </div>
             </section>
         </div>
@@ -47,7 +37,10 @@
         <a href="https://www.are.na/jyotsna-_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png" alt="Arena Logo"></a>
         <a href="https://www.linkedin.com/in/jyotsna-iy/"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png" alt="LinkedIn Logo"></a>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
+
 
 
