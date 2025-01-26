@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     min-height: 100vh; 
     height: 100%;
-    font-family: 'OPTIMA', serif;
+    font-family: 'Caslson', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -228,8 +228,8 @@ footer img {
         margin: 0 2cm;
     }
  @font-face {
-    font-family: 'OPTIMA';
-    src: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/OPTIMA.ttf') format('truetype');
+    font-family: 'Caslson';
+    src: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/CaslonFiveForty-Roman.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
