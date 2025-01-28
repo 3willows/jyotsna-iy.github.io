@@ -186,12 +186,19 @@ footer img {
 }
 
 .watermark {
-    margin-top: 0.2em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
     opacity: 0.3;
     color: #888;
     font-size: 8px;
     font-family: 'DM Mono', monospace;
     line-height: 1;
+    z-index: 100;
 }
 
 .watermark a {
@@ -272,7 +279,7 @@ footer img:hover {
     }
 
     .watermark {
-        font-size: 8px;
+        font-size: 7px;
     }
 
     .sidenav.show {
@@ -321,5 +328,6 @@ footer img:hover {
     font-weight: normal;
     font-style: normal;
 }
+
 
 
