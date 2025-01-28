@@ -41,15 +41,10 @@ header {
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
-    padding: 0; /* Reset padding */
-    height: 170px; /* Maintain the height of 170px */
+    padding: 10px;
     background-color: transparent;
     border: 3px solid #ffffff;
     border-radius: 15px;
-    display: flex;
-    justify-content: center; /* Center nav items horizontally */
-    align-items: center; /* Center nav items vertically */
-    box-sizing: border-box;
 }
 
 .sidenav ul {
@@ -61,21 +56,18 @@ header {
     align-items: center;
     flex-wrap: nowrap;
     color: #ffffff;
-    width: 100%; /* Ensure the ul takes full width of the navbar */
 }
 
 .sidenav li {
     margin: 0 5px;
     position: relative;
-    text-align: center;
 }
 
 .sidenav a {
     text-decoration: none;
     color: #ffffff;
     display: block;
-    padding: 8px 12px; /* Reduced padding for a "skinny" effect */
-    font-size: 16px; /* Smaller font size for a more compact look */
+    padding: 5px 10px;
     white-space: nowrap;
 }
 
