@@ -45,7 +45,7 @@ header {
     background-color: transparent;
     border: 3px solid #ffffff;
     border-radius: 15px;
-    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    box-sizing: border-box;
 }
 
 .sidenav ul {
@@ -53,23 +53,23 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between; /* Ensures the items spread out evenly */
+    justify-content: space-between; /* Spacing the navbar items */
     align-items: center;
     flex-wrap: wrap;
     color: #ffffff;
 }
 
 .sidenav li {
-    margin: 10px 15px;
+    margin: 0 5px;
     position: relative;
-    text-align: center; /* Ensures text is centered in each list item */
+    text-align: center;
 }
 
 .sidenav a {
     text-decoration: none;
     color: #ffffff;
     display: block;
-    padding: 5px 10px;
+    padding: 10px 15px;
     white-space: nowrap;
 }
 
@@ -102,10 +102,11 @@ header {
 
 .content {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px; /* Ensures content doesn't spill over */
     margin: 0 auto;
     padding: 20px;
     color: #000000;
+    box-sizing: border-box; 
 }
 
 .menu-button {
@@ -209,6 +210,7 @@ footer img {
 
     .content {
         padding: 15px;
+        width: 100%; /* Ensures no content overflow */
     }
 
     .psa-image {
