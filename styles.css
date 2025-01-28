@@ -188,18 +188,24 @@ footer img {
 }
 
 .watermark {
-    margin-top: 0.2em; 
-    opacity: 0.3;
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+    opacity: 0.3;  
     color: #888;
-    font-size: 8px; 
-    font-family: 'DM Mono', monospace;
-    line-height: 1; 
-}
+    font-size: 8px;
+    line-height: 1;
+    z-index: 1000;  
 
 .watermark a {
     text-decoration: none;
     color: #888;
 }
+
 
 /* Social Media Icons */
 footer img {
