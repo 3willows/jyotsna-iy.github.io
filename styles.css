@@ -42,7 +42,7 @@ header {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0; /* Reset padding */
-    height: 170px; /* Set the height to 170px */
+    height: 170px; /* Maintain the height of 170px */
     background-color: transparent;
     border: 3px solid #ffffff;
     border-radius: 15px;
@@ -74,8 +74,8 @@ header {
     text-decoration: none;
     color: #ffffff;
     display: block;
-    padding: 10px 15px; /* Adjust padding to fit the navbar */
-    font-size: 18px; /* Adjust font size for visibility */
+    padding: 8px 12px; /* Reduced padding for a "skinny" effect */
+    font-size: 16px; /* Smaller font size for a more compact look */
     white-space: nowrap;
 }
 
