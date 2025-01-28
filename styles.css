@@ -1,12 +1,12 @@
 body {
-    background-color: #b9d8ea; 
+    background-color: #b9d8ea;
     background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/');
-    background-size: cover; 
-    background-attachment: scroll; 
+    background-size: cover;
+    background-attachment: scroll;
     background-position: center center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
     height: 100%;
     font-family: 'Merriweather', serif;
     margin: 0;
@@ -14,12 +14,12 @@ body {
     box-sizing: border-box;
     letter-spacing: 2px;
     text-align: center;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 header {
     width: 100%;
-    height: 170px; 
+    height: 170px;
     background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/heading1.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -29,17 +29,17 @@ header {
 .container {
     flex: 1;
     display: flex;
-    flex-direction: column; /* Ensure everything stacks vertically */
+    flex-direction: column; /* Stack items vertically */
     align-items: center;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     color: #ffffff;
-    padding: 20px; /* Add padding for better spacing */
+    padding: 20px;
 }
 
 .sidenav {
-    width: 100%; /* Full width on mobile */
+    width: 100%; /* Make navbar take full width */
     max-width: 1200px;
     margin: 20px auto;
     padding: 10px;
@@ -53,14 +53,14 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Stack navbar items vertically on small screens */
+    justify-content: space-around; /* Distribute items across the navbar */
     align-items: center;
     flex-wrap: nowrap;
     color: #ffffff;
 }
 
 .sidenav li {
-    margin: 10px 0; /* Increased margin between navbar items */
+    margin: 0 5px;
     position: relative;
 }
 
@@ -68,18 +68,23 @@ header {
     text-decoration: none;
     color: #ffffff;
     display: block;
-    padding: 10px 15px; /* Larger padding for touch devices */
+    padding: 5px 10px;
     white-space: nowrap;
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.sidenav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Add hover effect */
 }
 
 .sidenav .has-submenu > a::after {
-    content: '▼';
+    content: ' ▼'; /* Dropdown indicator */
     font-size: 0.7em;
     margin-left: 5px;
 }
 
 .sidenav ul ul {
-    display: none;
+    display: none; /* Hide submenus by default */
     position: absolute;
     top: 100%;
     left: 0;
@@ -91,7 +96,7 @@ header {
 }
 
 .sidenav li:hover > ul {
-    display: block;
+    display: block; /* Show submenu on hover */
 }
 
 .sidenav ul ul li {
@@ -116,7 +121,7 @@ header {
 
 section {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping of content on small screens */
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
@@ -140,11 +145,11 @@ section p {
 }
 
 .text-content {
-    flex: 1; /* Allow text content to take up available space */
+    flex: 1;
 }
 
 .image-content {
-    flex-shrink: 0; /* Prevent the image from shrinking */
+    flex-shrink: 0;
     margin-top: 20px;
     text-align: center;
 }
@@ -166,7 +171,7 @@ footer {
 }
 
 footer img {
-    width: 40px; /* Increase size of footer icons */
+    width: 40px;
     margin: 0 15px;
     vertical-align: middle;
 }
@@ -181,12 +186,12 @@ footer img {
 }
 
 .watermark {
-    margin-top: 0.2em; 
+    margin-top: 0.2em;
     opacity: 0.3;
     color: #888;
-    font-size: 8px; 
+    font-size: 8px;
     font-family: 'DM Mono', monospace;
-    line-height: 1; 
+    line-height: 1;
 }
 
 .watermark a {
@@ -199,7 +204,7 @@ footer img {
 @media screen and (max-width: 768px) {
     body {
         background-size: cover;
-        font-size: 14px; /* Adjust font size for mobile */
+        font-size: 14px;
     }
 
     .sidenav {
@@ -209,33 +214,33 @@ footer img {
 
     .sidenav ul {
         flex-direction: column;
-        align-items: flex-start; /* Stack navbar items vertically */
+        align-items: flex-start;
         margin-top: 10px;
     }
 
     .sidenav li {
         margin: 10px 0;
-        width: 100%; /* Full width for mobile */
+        width: 100%;
     }
 
     .menu-button {
         display: block;
         text-align: center;
         margin-top: 10px;
-        font-size: 30px; /* Larger size for mobile */
+        font-size: 30px;
     }
 
     .container {
-        padding: 10px; /* Reduced padding for smaller screens */
+        padding: 10px;
     }
 
     section {
-        flex-direction: column; /* Stack text and image vertically */
+        flex-direction: column;
         align-items: center;
     }
 
     .text-content {
-        width: 100%; /* Take full width on small screens */
+        width: 100%;
     }
 
     .image-content {
@@ -245,38 +250,57 @@ footer img {
     }
 
     footer {
-        display: block; /* Stack footer icons vertically */
+        display: block;
     }
 
     footer img {
-        width: 30px; /* Smaller icons for mobile */
+        width: 30px;
         margin: 5px;
     }
 
     .psa-image {
-        height: 90px; /* Adjust the signature image height */
+        height: 90px;
     }
 
     .watermark {
         font-size: 8px;
     }
+
+    .sidenav.show {
+        display: block;
+    }
+
+    .sidenav ul ul {
+        display: block; /* Ensure dropdown appears when it's mobile */
+        position: static;
+        margin-left: 20px;
+    }
+
+    .sidenav .submenu-active > ul {
+        display: block;
+    }
+
+    /* Override the default behavior of hover and make the submenu open on click */
+    .sidenav li > a {
+        cursor: pointer;
+    }
 }
 
 @media screen and (min-width: 769px) {
     section p {
-        font-size: 1.125rem; /* Slightly larger text on larger screens */
+        font-size: 1.125rem;
     }
 
     .sidenav ul {
-        flex-direction: row; /* Keep the navbar horizontal */
+        flex-direction: row; /* Keep navbar horizontal */
     }
 
     footer img {
-        width: 40px; /* Larger footer icons for larger screens */
+        width: 40px;
     }
 
     .psa-image {
-        height: 120px; /* Slightly larger signature image */
+        height: 120px;
     }
 }
 
@@ -287,4 +311,5 @@ footer img {
     font-weight: normal;
     font-style: normal;
 }
+
 
