@@ -29,16 +29,17 @@ header {
 .container {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Ensure everything stacks vertically */
     align-items: center;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    color: #ffffff; 
+    color: #ffffff;
+    padding: 20px; /* Add padding for better spacing */
 }
 
 .sidenav {
-    width: 90%;
+    width: 100%; /* Full width on mobile */
     max-width: 1200px;
     margin: 20px auto;
     padding: 10px;
@@ -52,14 +53,14 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column; /* Stack navbar items vertically on small screens */
     align-items: center;
     flex-wrap: nowrap;
     color: #ffffff;
 }
 
 .sidenav li {
-    margin: 0 5px;
+    margin: 10px 0; /* Increased margin between navbar items */
     position: relative;
 }
 
@@ -67,7 +68,7 @@ header {
     text-decoration: none;
     color: #ffffff;
     display: block;
-    padding: 5px 10px;
+    padding: 10px 15px; /* Larger padding for touch devices */
     white-space: nowrap;
 }
 
@@ -115,40 +116,64 @@ header {
 
 section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping of content on small screens */
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 20px;
     text-align: left;
     color: #000000;
 }
 
 section p {
-    font-size: 15px;
+    font-size: 1rem; /* Use relative font size for scalability */
     margin: 20px 0;
     padding: 20px 0;
     text-align: left;
-    width: 100%;
-    color: #000000;
+    width: 100%; /* Full width for small screens */
+}
+
+.text-image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content {
+    flex: 1; /* Allow text content to take up available space */
+}
+
+.image-content {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-top: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%; /* Ensure images scale down */
+    height: auto;
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
     width: 100%;
-    margin-top: auto; 
-    color: #ffffff; 
+    margin-top: auto;
+    color: #ffffff;
     background: none;
 }
 
 footer img {
-    width: 30px;
-    margin: 0 10px;
+    width: 40px; /* Increase size of footer icons */
+    margin: 0 15px;
     vertical-align: middle;
 }
 
 .psa-image {
     width: 100%;
-    height: 90px; 
+    height: auto;
     background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/signature.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -169,83 +194,97 @@ footer img {
     color: #888;
 }
 
+/* Media Queries for Responsiveness */
+
 @media screen and (max-width: 768px) {
     body {
-        background-size: cover; 
+        background-size: cover;
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    .sidenav {
+        width: 100%;
+        padding: 10px;
     }
 
     .sidenav ul {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start; /* Stack navbar items vertically */
+        margin-top: 10px;
     }
 
     .sidenav li {
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    .sidenav ul ul {
-        position: static;
-        display: none;
-        margin-left: 20px;
-        border: none;
+        margin: 10px 0;
+        width: 100%; /* Full width for mobile */
     }
 
     .menu-button {
         display: block;
         text-align: center;
         margin-top: 10px;
+        font-size: 30px; /* Larger size for mobile */
     }
 
-    .sidenav.show {
-        display: block;
+    .container {
+        padding: 10px; /* Reduced padding for smaller screens */
     }
 
-    .sidenav .submenu-active > ul {
-        display: block;
+    section {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center;
     }
 
-    .content {
-        padding: 15px;
+    .text-content {
+        width: 100%; /* Take full width on small screens */
+    }
+
+    .image-content {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    footer {
+        display: block; /* Stack footer icons vertically */
+    }
+
+    footer img {
+        width: 30px; /* Smaller icons for mobile */
+        margin: 5px;
     }
 
     .psa-image {
-        height: 100px; 
+        height: 90px; /* Adjust the signature image height */
     }
 
     .watermark {
-        font-size: 7px; 
+        font-size: 8px;
     }
 }
 
 @media screen and (min-width: 769px) {
     section p {
-        font-size: 15px;
-        padding: 20px 0;
+        font-size: 1.125rem; /* Slightly larger text on larger screens */
+    }
+
+    .sidenav ul {
+        flex-direction: row; /* Keep the navbar horizontal */
     }
 
     footer img {
-        margin: 0 2cm;
+        width: 40px; /* Larger footer icons for larger screens */
     }
- @font-face {
+
+    .psa-image {
+        height: 120px; /* Slightly larger signature image */
+    }
+}
+
+/* Font Face for Merriweather */
+@font-face {
     font-family: 'Merriweather';
     src: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/Merriweather-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-    .text-image-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.text-content {
-    flex: 1;
-}
-
-.image-content {
-    flex-shrink: 0;
-}
-
 }
 
