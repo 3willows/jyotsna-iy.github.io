@@ -1,12 +1,12 @@
 body {
-    background-color: #b9d8ea;
+    background-color: #b9d8ea; 
     background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/');
-    background-size: cover;
-    background-attachment: scroll;
+    background-size: cover; 
+    background-attachment: scroll; 
     background-position: center center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; 
     height: 100%;
     font-family: 'Merriweather', serif;
     margin: 0;
@@ -14,12 +14,12 @@ body {
     box-sizing: border-box;
     letter-spacing: 2px;
     text-align: center;
-    color: #ffffff;
+    color: #ffffff; 
 }
 
 header {
     width: 100%;
-    height: 170px;
+    height: 170px; 
     background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/heading1.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -33,15 +33,15 @@ header {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    color: #ffffff;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 0 20px;
+    color: #ffffff; 
 }
 
 .sidenav {
     width: 100%;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 20px 0;
     padding: 10px;
     background-color: transparent;
     border: 3px solid #ffffff;
@@ -70,15 +70,10 @@ header {
     display: block;
     padding: 5px 10px;
     white-space: nowrap;
-    transition: background-color 0.3s;
-}
-
-.sidenav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .sidenav .has-submenu > a::after {
-    content: ' ▼';
+    content: '▼';
     font-size: 0.7em;
     margin-left: 5px;
 }
@@ -107,7 +102,7 @@ header {
 .content {
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     color: #000000;
 }
@@ -121,218 +116,151 @@ header {
 
 section {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
     text-align: left;
     color: #000000;
 }
 
 section p {
-    font-size: 1rem;
+    font-size: 15px;
     margin: 20px 0;
     padding: 20px 0;
     text-align: left;
     width: 100%;
-}
-
-.text-image-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.text-content {
-    flex: 1;
-}
-
-.image-content {
-    flex-shrink: 0;
-    margin-top: 20px;
-    text-align: center;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+    color: #000000;
 }
 
 footer {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
+    text-align: center;
+    padding: 10px 0; 
     width: 100%;
-    margin-top: auto;
-    color: #ffffff;
+    margin-top: auto; 
+    color: #ffffff; 
     background: none;
-    z-index: 1; 
+}
+
+footer img {
+    width: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
 }
 
 .psa-image {
-    position: absolute; 
-    bottom: 0;
     width: 100%;
     height: 90px; 
     background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/signature.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 0;  
 }
-
-footer img {
-    width: 40px;
-    margin: 0 15px;
-    vertical-align: middle;
-    z-index: 2; 
-}
-
 
 .watermark {
-    position: fixed; 
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: 0;
-    padding: 5px 0;
-    opacity: 0.3;  
+    margin-top: 0.2em; 
+    opacity: 0.3;
     color: #888;
-    font-size: 8px;
-    line-height: 1;
-    z-index: 1000;  
+    font-size: 8px; 
+    font-family: 'DM Mono', monospace;
+    line-height: 1; 
+}
 
 .watermark a {
     text-decoration: none;
     color: #888;
 }
 
-
-/* Social Media Icons */
-footer img {
-    width: 40px;
-    margin: 0 15px;
-}
-
-footer img:hover {
-    filter: brightness(1.3);
-}
-
-/* Mobile Styles */
+/* For mobile and smaller devices */
 @media screen and (max-width: 768px) {
     body {
-        background-size: cover;
-        font-size: 14px;
-    }
-
-    .sidenav {
-        width: 100%;
-        padding: 10px;
+        background-size: cover; 
     }
 
     .sidenav ul {
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 10px;
     }
 
     .sidenav li {
-        margin: 10px 0;
         width: 100%;
+        margin: 5px 0;
+    }
+
+    .sidenav ul ul {
+        position: static;
+        display: none;
+        margin-left: 20px;
+        border: none;
     }
 
     .menu-button {
         display: block;
         text-align: center;
         margin-top: 10px;
-        font-size: 30px;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .text-content {
-        width: 100%;
-    }
-
-    .image-content {
-        width: 100%;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    footer {
-        display: block;
-    }
-
-    footer img {
-        width: 30px;
-        margin: 5px;
-    }
-
-    .psa-image {
-        height: 90px;
-    }
-
-    .watermark {
-        font-size: 7px;
     }
 
     .sidenav.show {
         display: block;
     }
 
-    .sidenav ul ul {
-        display: block;
-        position: static;
-        margin-left: 20px;
-    }
-
     .sidenav .submenu-active > ul {
         display: block;
     }
 
-    .sidenav li > a {
-        cursor: pointer;
-    }
-}
-
-/* Larger Screen Styles */
-@media screen and (min-width: 769px) {
-    section p {
-        font-size: 1.125rem;
-    }
-
-    .sidenav ul {
-        flex-direction: row;
-    }
-
-    footer img {
-        width: 40px;
+    .content {
+        padding: 15px;
+        margin: 20px auto;
     }
 
     .psa-image {
-        height: 120px;
+        height: 100px; 
+    }
+
+    .watermark {
+        font-size: 7px; 
     }
 }
 
-/* Font Face for Merriweather */
+/* For tablet and larger screens */
+@media screen and (min-width: 769px) {
+    section p {
+        font-size: 15px;
+        padding: 20px 0;
+    }
+
+    footer img {
+        margin: 0 2cm;
+    }
+
+    .text-image-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 20px 0;
+    }
+
+    .text-content {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    .image-content {
+        flex-shrink: 0;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+}
+
+/* Font */
 @font-face {
     font-family: 'Merriweather';
     src: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/Merriweather-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 
 
 
