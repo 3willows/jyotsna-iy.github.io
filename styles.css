@@ -7,7 +7,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
-    height: 100%;
     font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
@@ -35,7 +34,7 @@ header {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .sidenav {
@@ -55,12 +54,12 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; /* Allow the menu to stack in smaller screens */
     color: #ffffff;
 }
 
 .sidenav li {
-    margin: 0 5px;
+    margin: 10px 15px;
     position: relative;
 }
 
@@ -170,20 +169,16 @@ footer img {
     color: #888;
 }
 
-/* For mobile and smaller devices */
+/* Mobile (up to 768px) */
 @media screen and (max-width: 768px) {
-    body {
-        background-size: cover; 
-    }
-
     .sidenav ul {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: flex-start; /* Align items to the left */
     }
 
     .sidenav li {
-        width: 100%;
-        margin: 5px 0;
+        width: 100%; /* Make the menu items stretch across the screen */
+        margin: 5px 0; /* Reduce space between items */
     }
 
     .sidenav ul ul {
@@ -203,13 +198,8 @@ footer img {
         display: block;
     }
 
-    .sidenav .submenu-active > ul {
-        display: block;
-    }
-
     .content {
         padding: 15px;
-        margin: 20px auto;
     }
 
     .psa-image {
@@ -221,10 +211,10 @@ footer img {
     }
 }
 
-/* For tablet and larger screens */
+/* Tablet and larger screens (769px and up) */
 @media screen and (min-width: 769px) {
     section p {
-        font-size: 15px;
+        font-size: 16px;
         padding: 20px 0;
     }
 
@@ -260,6 +250,7 @@ footer img {
     font-weight: normal;
     font-style: normal;
 }
+
 
 
 
