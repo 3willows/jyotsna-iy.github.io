@@ -32,8 +32,8 @@ header {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+    margin: 20px auto; /* Center the content */
+    padding: 0 15px; /* Added horizontal padding for responsiveness */
     color: #ffffff;
 }
 
@@ -54,12 +54,12 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap; /* Allow the menu to stack in smaller screens */
+    flex-wrap: wrap; /* Allow stacking on smaller screens */
     color: #ffffff;
 }
 
 .sidenav li {
-    margin: 10px 15px;
+    margin: 10px 15px; /* Neater spacing between menu items */
     position: relative;
 }
 
