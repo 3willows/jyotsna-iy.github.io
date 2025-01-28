@@ -41,6 +41,7 @@ header {
     width: 90%;
     max-width: 1200px; 
     margin: 20px auto;
+    height: 170px; 
     padding: 10px;
     background-color: transparent;
     border: 3px solid #ffffff;
