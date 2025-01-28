@@ -1,12 +1,12 @@
 body {
-    background-color: #b9d8ea; 
+    background-color: #b9d8ea;
     background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/');
-    background-size: cover; 
-    background-attachment: scroll; 
+    background-size: cover;
+    background-attachment: scroll;
     background-position: center center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
     height: 100%;
     font-family: 'Merriweather', serif;
     margin: 0;
@@ -14,12 +14,12 @@ body {
     box-sizing: border-box;
     letter-spacing: 2px;
     text-align: center;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 header {
     width: 100%;
-    height: 170px; 
+    height: 170px;
     background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/heading1.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -34,18 +34,18 @@ header {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .sidenav {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1200px; 
     margin: 20px auto;
     padding: 10px;
     background-color: transparent;
     border: 3px solid #ffffff;
     border-radius: 15px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensure padding doesn’t cause overflow */
 }
 
 .sidenav ul {
@@ -53,9 +53,9 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between; /* Spacing the navbar items */
+    justify-content: space-between; /* Adjust to space items equally */
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     color: #ffffff;
 }
 
@@ -69,7 +69,7 @@ header {
     text-decoration: none;
     color: #ffffff;
     display: block;
-    padding: 10px 15px;
+    padding: 10px 15px; /* Ensures spacing is consistent */
     white-space: nowrap;
 }
 
@@ -102,11 +102,11 @@ header {
 
 .content {
     width: 100%;
-    max-width: 1200px; /* Ensures content doesn't spill over */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     color: #000000;
-    box-sizing: border-box; 
+    box-sizing: border-box; /* Ensures padding is part of the width */
 }
 
 .menu-button {
@@ -136,10 +136,10 @@ section p {
 
 footer {
     text-align: center;
-    padding: 10px 0; 
+    padding: 10px 0;
     width: 100%;
-    margin-top: auto; 
-    color: #ffffff; 
+    margin-top: auto;
+    color: #ffffff;
     background: none;
 }
 
@@ -151,7 +151,7 @@ footer img {
 
 .psa-image {
     width: 100%;
-    height: 90px; 
+    height: 90px;
     background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/signature.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -159,12 +159,12 @@ footer img {
 }
 
 .watermark {
-    margin-top: 0.2em; 
+    margin-top: 0.2em;
     opacity: 0.3;
     color: #888;
-    font-size: 8px; 
+    font-size: 8px;
     font-family: 'DM Mono', monospace;
-    line-height: 1; 
+    line-height: 1;
 }
 
 .watermark a {
@@ -172,9 +172,10 @@ footer img {
     color: #888;
 }
 
+/* Mobile Adjustments */
 @media screen and (max-width: 768px) {
     body {
-        background-size: cover; 
+        background-size: cover;
     }
 
     .sidenav ul {
@@ -210,15 +211,15 @@ footer img {
 
     .content {
         padding: 15px;
-        width: 100%; /* Ensures no content overflow */
+        width: 100%; 
     }
 
     .psa-image {
-        height: 100px; 
+        height: 100px;
     }
 
     .watermark {
-        font-size: 7px; 
+        font-size: 7px;
     }
 }
 
