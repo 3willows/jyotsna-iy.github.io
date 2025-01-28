@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
+    height: 100%;
     font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
@@ -32,19 +33,19 @@ header {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    margin: 20px auto; /* Center the content */
-    padding: 0 15px; /* Added horizontal padding for responsiveness */
-    color: #ffffff;
+    margin: 0 auto;
+    color: #ffffff; 
 }
 
 .sidenav {
     width: 100%;
     max-width: 1200px;
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 10px;
     background-color: transparent;
     border: 3px solid #ffffff;
     border-radius: 15px;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
 
 .sidenav ul {
@@ -52,15 +53,16 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Ensures the items spread out evenly */
     align-items: center;
-    flex-wrap: wrap; /* Allow stacking on smaller screens */
+    flex-wrap: wrap;
     color: #ffffff;
 }
 
 .sidenav li {
-    margin: 10px 15px; /* Neater spacing between menu items */
+    margin: 10px 15px;
     position: relative;
+    text-align: center; /* Ensures text is centered in each list item */
 }
 
 .sidenav a {
@@ -101,7 +103,7 @@ header {
 .content {
     width: 100%;
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
     color: #000000;
 }
@@ -169,16 +171,19 @@ footer img {
     color: #888;
 }
 
-/* Mobile (up to 768px) */
 @media screen and (max-width: 768px) {
+    body {
+        background-size: cover; 
+    }
+
     .sidenav ul {
-        flex-direction: column; /* Stack menu items vertically */
-        align-items: flex-start; /* Align items to the left */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .sidenav li {
-        width: 100%; /* Make the menu items stretch across the screen */
-        margin: 5px 0; /* Reduce space between items */
+        width: 100%;
+        margin: 5px 0;
     }
 
     .sidenav ul ul {
@@ -198,6 +203,10 @@ footer img {
         display: block;
     }
 
+    .sidenav .submenu-active > ul {
+        display: block;
+    }
+
     .content {
         padding: 15px;
     }
@@ -211,10 +220,9 @@ footer img {
     }
 }
 
-/* Tablet and larger screens (769px and up) */
 @media screen and (min-width: 769px) {
     section p {
-        font-size: 16px;
+        font-size: 15px;
         padding: 20px 0;
     }
 
@@ -226,32 +234,23 @@ footer img {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 20px 0;
     }
 
     .text-content {
         flex: 1;
-        padding-right: 20px;
     }
 
     .image-content {
         flex-shrink: 0;
     }
-
-    .container {
-        padding: 0 20px;
-    }
 }
 
-/* Font */
 @font-face {
     font-family: 'Merriweather';
     src: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/Merriweather-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
-
 
 
 
