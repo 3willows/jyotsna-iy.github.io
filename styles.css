@@ -39,14 +39,17 @@ header {
 
 .sidenav {
     width: 90%;
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: 20px auto;
-    height: 170px; 
-    padding: 10px;
+    padding: 0; /* Reset padding */
+    height: 170px; /* Set the height to 170px */
     background-color: transparent;
     border: 3px solid #ffffff;
     border-radius: 15px;
-    box-sizing: border-box; 
+    display: flex;
+    justify-content: center; /* Center nav items horizontally */
+    align-items: center; /* Center nav items vertically */
+    box-sizing: border-box;
 }
 
 .sidenav ul {
@@ -54,10 +57,11 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
     color: #ffffff;
+    width: 100%; /* Ensure the ul takes full width of the navbar */
 }
 
 .sidenav li {
@@ -70,7 +74,8 @@ header {
     text-decoration: none;
     color: #ffffff;
     display: block;
-    padding: 10px 15px; 
+    padding: 10px 15px; /* Adjust padding to fit the navbar */
+    font-size: 18px; /* Adjust font size for visibility */
     white-space: nowrap;
 }
 
