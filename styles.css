@@ -123,7 +123,7 @@ section {
 }
 
 section p {
-    font-size: 10px;
+    font-size: 15px;
     margin: 20px 0;
     padding: 20px 0;
     text-align: left;
@@ -220,7 +220,7 @@ footer img {
 
 @media screen and (min-width: 769px) {
     section p {
-        font-size: 10px;
+        font-size: 15px;
         padding: 20px 0;
     }
 
