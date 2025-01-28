@@ -160,6 +160,7 @@ img {
 }
 
 footer {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,24 +169,28 @@ footer {
     margin-top: auto;
     color: #ffffff;
     background: none;
+    z-index: 1; 
+}
+
+.psa-image {
+    position: absolute; 
+    bottom: 0;
+    width: 100%;
+    height: 90px; 
+    background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/signature.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;  
 }
 
 footer img {
     width: 40px;
     margin: 0 15px;
     vertical-align: middle;
+    z-index: 2; 
 }
 
-.psa-image {
-    width: 100%;
-    height: auto;
-    background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/signature.png');
-    background-size: contain; 
-    background-repeat: no-repeat; 
-    background-position: center center; 
-    display: block; 
-    height: 100px; 
-}
 
 .watermark {
     position: fixed; 
