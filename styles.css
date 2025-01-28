@@ -38,22 +38,21 @@ header {
 }
 
 .sidenav {
-    width: 100%;
+    width: 90%;
     max-width: 1200px; 
     margin: 20px auto;
     padding: 10px;
     background-color: transparent;
     border: 3px solid #ffffff;
     border-radius: 15px;
-    box-sizing: border-box; /* Ensure padding doesn’t cause overflow */
-}
+    box-sizing: border-box; 
 
 .sidenav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between; /* Adjust to space items equally */
+    justify-content: space-between; 
     align-items: center;
     flex-wrap: nowrap;
     color: #ffffff;
@@ -69,7 +68,7 @@ header {
     text-decoration: none;
     color: #ffffff;
     display: block;
-    padding: 10px 15px; /* Ensures spacing is consistent */
+    padding: 10px 15px; 
     white-space: nowrap;
 }
 
