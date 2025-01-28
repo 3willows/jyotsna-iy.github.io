@@ -178,11 +178,13 @@ footer img {
 
 .psa-image {
     width: 100%;
-    height: 90px; 
+    height: auto;
     background-image: url('https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/signature.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    display: block; 
+    height: 100px; 
 }
 
 .watermark {
