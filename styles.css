@@ -199,8 +199,17 @@ footer img {
     color: #888;
 }
 
-/* Media Queries for Responsiveness */
+/* Social Media Icons */
+footer img {
+    width: 40px;
+    margin: 0 15px;
+}
 
+footer img:hover {
+    filter: brightness(1.3); /* Add a hover effect to icons */
+}
+
+/* Mobile Styles */
 @media screen and (max-width: 768px) {
     body {
         background-size: cover;
@@ -286,6 +295,7 @@ footer img {
     }
 }
 
+/* Larger Screen Styles */
 @media screen and (min-width: 769px) {
     section p {
         font-size: 1.125rem;
