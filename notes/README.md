@@ -16,12 +16,7 @@ layout:
     visible: false
 ---
 
-# index
+# Index
 
-test
+Currently, I'm pursuing a fellowship at Newspeak House. Click links, jump into rabbit holes. more about my discoveries/learning [here](https://app.gitbook.com/o/Dra42HplsS9kOdpsklvB/s/i1t9ybiU9BShxsPtzFrF/)&#x20;
 
-Currently, I'm pursuing a fellowship at Newspeak House. Click links, jump into rabbit holes.
-
-
-
-metadata/annotation guidance
