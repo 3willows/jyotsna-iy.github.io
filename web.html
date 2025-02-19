@@ -137,10 +137,11 @@
         }
     }
 
-    function addResearcher(name, thematicInterest = "", url = "", linkText = "",  irl = "", remarks = "") {
-        researcherData.push({ name, thematicInterest, url, irl, remarks });
-        renderTable();
+   function addResearcher(name, thematicInterest = "", url = "", linkText = "", irl = "", remarks = "") {
+    researcherData.push({ name, thematicInterest, url, linkText, irl, remarks }); 
+    renderTable();
     }
+
 
     renderTable();
 
@@ -197,13 +198,18 @@
     updateResearcher("Ashish Avikunthak", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
     updateResearcher("Anand Patwardhan", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
     updateResearcher("Janice Pariat", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" })
-        
+
+        <div class="container">
+        <div class="content">
             <section>
                 <p style="text-align: center; font-style: italic; color: #555;">
                 The URL column archives how I discovered them<br>
                 The IRL column tries to documents an in real life encounter, this may not necessarily be a personal meeting rather a chance to listen/talk to them in person<br><br>
                 I am the culmination of people I admire.
                 </p><br><br>
+    </section>
+    </div>
+    </div>
 
 
     </script>
