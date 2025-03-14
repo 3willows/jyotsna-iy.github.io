@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jyo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header aria-label="Jyotsna Iyer">
     </header>
-    
+
     <div class="menu-button" onclick="toggleMenu()">☰</div>
-    <div id="nav-placeholder"></div> 
-    
+    <div id="nav-placeholder"></div>
+
     <div class="container">
         <div class="content">
             <section>
                 <h2>Researchers/Scholars</h2>
                 <p style="text-align: center; font-style: italic; color: #555;">
-                Rabbit holes on the internet lead me to the work of some incredible researchers. 
-                I wanted to parse a way to understand how I find them and manage to bump into them in the real world if I do. 
-                Forming a "network" doesn't have to be so elusive/abstract.<br><br>
-                The URL column records how I discovered them<br>
-                The IRL column tries to document an in real life encounter, this may not necessarily be a personal meeting rather a chance to listen/talk to them in person<br><br>
-                I am the culmination of the people I admire.
+                    Rabbit holes on the internet lead me to the work of some incredible researchers.
+                    I wanted to parse a way to understand how I find them and manage to bump into them in the real world
+                    if I do.
+                    Forming a "network" doesn't have to be so elusive/abstract.<br><br>
+                    The URL column records how I discovered them<br>
+                    The IRL column tries to document an in real life encounter, this may not necessarily be a personal
+                    meeting rather a chance to listen/talk to them in person<br><br>
+                    I am the culmination of the people I admire.
                 </p><br><br>
-                 <table border="1" id="researcherTable">
+                <table border="1" id="researcherTable">
                     <thead>
                         <tr>
                             <th>Researcher/Scholar</th>
@@ -36,17 +40,23 @@
                         </tr>
                     </thead>
                     <tbody>
-                    
+
                     </tbody>
                 </table>
             </section>
         </div>
     </div>
-    
+
     <footer>
-        <a href="https://twitter.com/jyotsna_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png" alt="Twitter Logo"></a>
-        <a href="https://www.are.na/jyotsna-_iy"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png" alt="Arena Logo"></a>
-        <a href="https://www.linkedin.com/in/jyotsna-iy/"><img src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png" alt="LinkedIn Logo"></a>
+        <a href="https://twitter.com/jyotsna_iy"><img
+                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/twitter.png"
+                alt="Twitter Logo"></a>
+        <a href="https://www.are.na/jyotsna-_iy"><img
+                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/arena.png"
+                alt="Arena Logo"></a>
+        <a href="https://www.linkedin.com/in/jyotsna-iy/"><img
+                src="https://raw.githubusercontent.com/jyotsna-iy/jyotsna-iy.github.io/main/linkedin.png"
+                alt="LinkedIn Logo"></a>
         <a href="https://jyotsna-iy.github.io/psa">
             <div class="psa-image"></div>
         </a>
@@ -54,170 +64,168 @@
 
     <script src="script.js"></script>
     <script>
-    const researcherData = [
-        { name: "Corinne Cath" }, 
-        { name: "Nancy Mauro-Flude" },
-        { name: "Sarah Shin" },
-        { name: "Ben Vickers" },
-        { name: "Tripta Chandola" },
-        { name: "Silvio Lorusso" },
-        { name: "Maya Indira Ganesh" },
-        { name: "Wendi Yan" },
-        { name: "Lia Schiffito" },
-        { name: "Raqs Media Collective" },
-        { name: "Ruha Benjamin" },
-        { name: "Aris Komporozos-Athanasiou" },
-        { name: "Hito Steyrl" },
-        { name: "Deborah Raji" },
-        { name: "Mindy Seu" },
-        { name: "Rumman Chowdhury" },
-        { name: "Valeria Ferrari" },
-        { name: "Geert Lovink" },
-        { name: "Peli Grietzer" },
-        { name: "Caroline Basset" },
-        { name: "Idil Galip" },
-        { name: "Sam Lavigne" },
-        { name: "Adam Crymble" },
-        { name: "Spencer Chang" },
-        { name: "Alicia Guo" },
-        { name: "Saffron Huang" },
-        { name: "Matthew Sun" },
-        { name: "Jessica Dai" },
-        { name: "Eyal Weisman" },
-        { name: "Karen Gregory" },
-        { name: "Noopur Raval" },
-        { name: "Ashok Sukumaran" },
-        { name: "Shaina Anand" },
-        { name: "Ravi Sundaram" },
-        { name: "Shannon Mattern" },
-        { name: "Lucan Sin" },
-        { name: "Chia Amisola" },
-        { name: "Xiaowei Wang" },
-        { name: "Crystal Abidin" },
-        { name: "Sandeep Mertia" },
-        { name: "Melissa Terras" },
-        { name: "Jonathan Gray" },
-        { name: "Jeffrey Schnapp" },
-        { name: "Avani Tandon Vieira" },
-        { name: "Sofia Karim" },
-        { name: "Dibyaduti Roy" },
-        { name: "Miriam Posner" },
-        { name: "Quinn Dombrowski" },
-        { name: "Roopika Risam" },
-        { name: "Jajwalya Karajgikar" },
-        { name: "Dhanashree Thorat" },
-        { name: "Sadia Khatri" },
-        { name: "Aarman Roy" },
-        { name: "Shaunak Sen" },
-        { name: "Ashish Avikunthak" },
-        { name: "Anand Patwardhan" },
-        { name: "Janice Pariat" }
-    ];
+        const researcherData = [
+            { name: "Corinne Cath" },
+            { name: "Nancy Mauro-Flude" },
+            { name: "Sarah Shin" },
+            { name: "Ben Vickers" },
+            { name: "Tripta Chandola" },
+            { name: "Silvio Lorusso" },
+            { name: "Maya Indira Ganesh" },
+            { name: "Wendi Yan" },
+            { name: "Lia Schiffito" },
+            { name: "Raqs Media Collective" },
+            { name: "Ruha Benjamin" },
+            { name: "Aris Komporozos-Athanasiou" },
+            { name: "Hito Steyrl" },
+            { name: "Deborah Raji" },
+            { name: "Mindy Seu" },
+            { name: "Rumman Chowdhury" },
+            { name: "Valeria Ferrari" },
+            { name: "Geert Lovink" },
+            { name: "Peli Grietzer" },
+            { name: "Caroline Basset" },
+            { name: "Idil Galip" },
+            { name: "Sam Lavigne" },
+            { name: "Adam Crymble" },
+            { name: "Spencer Chang" },
+            { name: "Alicia Guo" },
+            { name: "Saffron Huang" },
+            { name: "Matthew Sun" },
+            { name: "Jessica Dai" },
+            { name: "Eyal Weisman" },
+            { name: "Karen Gregory" },
+            { name: "Noopur Raval" },
+            { name: "Ashok Sukumaran" },
+            { name: "Shaina Anand" },
+            { name: "Ravi Sundaram" },
+            { name: "Shannon Mattern" },
+            { name: "Lucan Sin" },
+            { name: "Chia Amisola" },
+            { name: "Xiaowei Wang" },
+            { name: "Crystal Abidin" },
+            { name: "Sandeep Mertia" },
+            { name: "Melissa Terras" },
+            { name: "Jonathan Gray" },
+            { name: "Jeffrey Schnapp" },
+            { name: "Avani Tandon Vieira" },
+            { name: "Sofia Karim" },
+            { name: "Dibyaduti Roy" },
+            { name: "Miriam Posner" },
+            { name: "Quinn Dombrowski" },
+            { name: "Roopika Risam" },
+            { name: "Jajwalya Karajgikar" },
+            { name: "Dhanashree Thorat" },
+            { name: "Sadia Khatri" },
+            { name: "Aarman Roy" },
+            { name: "Shaunak Sen" },
+            { name: "Ashish Avikunthak" },
+            { name: "Anand Patwardhan" },
+            { name: "Janice Pariat" }
+        ];
 
-    const tableBody = document.querySelector("#researcherTable tbody");
+        const tableBody = document.querySelector("#researcherTable tbody");
 
-    function renderTable() {
-        tableBody.innerHTML = "";
-        researcherData.forEach(researcher => {
-            const row = tableBody.insertRow();
-            row.insertCell().textContent = researcher.name;
-            row.insertCell().textContent = researcher.thematicInterest || "";
-            
-            const urlCell = row.insertCell();
-            if (researcher.url) {
-                const link = document.createElement('a');
-                link.href = researcher.url;
-                link.textContent = researcher.linkText || 'Profile'; 
-                urlCell.appendChild(link);
+        function renderTable() {
+            tableBody.innerHTML = "";
+            researcherData.forEach(researcher => {
+                const row = tableBody.insertRow();
+                row.insertCell().textContent = researcher.name;
+                row.insertCell().textContent = researcher.thematicInterest || "";
+
+                const urlCell = row.insertCell();
+                if (researcher.url) {
+                    const link = document.createElement('a');
+                    link.href = researcher.url;
+                    link.textContent = researcher.linkText || 'Profile';
+                    urlCell.appendChild(link);
+                }
+                row.insertCell().textContent = researcher.irl || "";
+                row.insertCell().textContent = researcher.remarks || "";
+            });
+        }
+
+        function updateResearcher(name, updates) {
+            const researcher = researcherData.find(r => r.name === name);
+            if (researcher) {
+                Object.assign(researcher, updates);
+                renderTable();
             }
-            row.insertCell().textContent = researcher.irl || "";
-            row.insertCell().textContent = researcher.remarks || "";
-        });
-    }
+        }
 
-    function updateResearcher(name, updates) {
-        const researcher = researcherData.find(r => r.name === name);
-        if (researcher) {
-            Object.assign(researcher, updates);
+        function addResearcher(name, thematicInterest = "", url = "", linkText = "", irl = "", remarks = "") {
+            researcherData.push({ name, thematicInterest, url, linkText, irl, remarks });
             renderTable();
         }
-    }
-
-   function addResearcher(name, thematicInterest = "", url = "", linkText = "", irl = "", remarks = "") {
-    researcherData.push({ name, thematicInterest, url, linkText, irl, remarks }); 
-    renderTable();
-    }
 
 
-    renderTable();
+        renderTable();
 
-    updateResearcher("Corinne Cath", { thematicInterest: "Cloud Infrastructures", url: "https://shop.meatspacepress.com/products/eaten-by-the-internet", linkText: "Eaten by the Internet", irl: "Futures Podcast (Live) with Corinne Cath and Fieke Jansen at Space4", remarks: "" });
-    updateResearcher("Nancy Mauro-Flude", { thematicInterest: "Design Anthropology, Embodied Cognition", url: "https://sister0.org/", linkText: "https://sister0.org/", irl: "", remarks: "Founder of the Autoluminescence Institute" });
-    updateResearcher("Sarah Shin", { thematicInterest: "", url: "https://www.library.ignota.org/", linkText: "Ignota Books", irl: "", remarks: "Bought The Carrier Bag Theory of Fiction by Ursula K. Le Guin at Camden Garden Centre" });
-    updateResearcher("Ben Vickers", { thematicInterest: "", url: "https://www.library.ignota.org/", linkText: "Ignota Books + Twitter", irl: "", remarks: "" });
-    updateResearcher("Tripta Chandola", { thematicInterest: "", url: "https://networkcultures.org/theblogofdisquiet/2024/05/01/_methodologyliterature-review-political-is-the-personal-the-personal-is-always-only-poetic/", linkText: "The Blog of Disquiet", irl: "", remarks: "" });
-    updateResearcher("Silvio Lorusso", { thematicInterest: "", url: "https://networkcultures.org/entreprecariat/why-i-almost-stopped-contributing-to-student-projects/", linkText: "Entreprecariat", irl: "", remarks: "" });
-    updateResearcher("Maya Indira Ganesh", { thematicInterest: "AI Ethics, Technology Studies", url: "https://www.mayaindiraganesh.com/", linkText: "Personal Website", irl: "Brief chat at Let's talk about power in AI: tactics for everyday publics (www.aisocietyforum.net/programme)", remarks: "" });
-    updateResearcher("Wendi Yan", { thematicInterest: "Design, Digital Culture", url: "https://www.wendiyan.com/", linkText: "Design Portfolio", irl: "", remarks: "" });
-    updateResearcher("Lia Schiffito", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" }); 
-    updateResearcher("Raqs Media Collective", { thematicInterest: "Art, Critical Theory", url: "https://www.raqsmediacollective.net/", linkText: "Collective Website", irl: "", remarks: "" });
-    updateResearcher("Ruha Benjamin", { thematicInterest: "Race, Technology, Justice", url: "https://www.ruhabenjamin.com/", linkText: "Academic Profile", irl: "", remarks: "" });
-    updateResearcher("Aris Komporozos-Athanasiou", { thematicInterest: "Finance, Political Economy", url: "https://www.ucl.ac.uk/political-economy/people/dr-aris-komporozos-athanasiou", linkText: "UCL Faculty Page", irl: "", remarks: "" });
-    updateResearcher("Hito Steyrl", { thematicInterest: "Digital Art, Media Theory", url: "https://www.e-flux.com/journal/author/hito-steyerl/", linkText: "e-flux Articles", irl: "", remarks: "" });
-    updateResearcher("Deborah Raji", { thematicInterest: "AI Ethics, Algorithmic Auditing", url: "https://www.debugraji.com/", linkText: "Personal Website", irl: "", remarks: "" });
-    updateResearcher("Mindy Seu", { thematicInterest: "Digital Archives, Design", url: "https://www.mindyseu.com/", linkText: "Portfolio & Projects", irl: "", remarks: "" });
-    updateResearcher("Rumman Chowdhary", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Valeria Ferrari", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Geert Lovink", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Peli Grietzer", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Caroline Basset", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Idil Galip", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Sam Lavigne", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });    
-    updateResearcher("Adam Crymble", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Spencer Chang", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Alicia Guo", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Saffron Huang", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Matthew Sun", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Jessica Dai", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Eyal Weisman", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Karen Gregory", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Noopur Raval", { thematicInterest: "Digital Labor, Platform Economies", url: "https://noopurraval.com/", linkText: "Academic Portfolio", irl: "", remarks: "" });
-    updateResearcher("Ashok Sukumaran", { thematicInterest: "Media Art, Digital Archives", url: "https://studio.camp/", linkText: "CAMP Studio", irl: "", remarks: "Co-founder of pad.ma" });
-    updateResearcher("Shaina Anand", { thematicInterest: "Filmmaking, Media Archives", url: "https://studio.camp/", linkText: "CAMP Studio", irl: "", remarks: "Works with Ashok on collaborative projects" });
-    updateResearcher("Ravi Sundaram", { thematicInterest: "Urban Media, Digital Cultures", url: "https://www.csds.in/ravi_sundaram", linkText: "CSDS Faculty Profile", irl: "", remarks: "" });
-    updateResearcher("Shannon Mattern", { thematicInterest: "Media Studies, Infrastructure", url: "https://wordsinspace.net/", linkText: "Words in Space", irl: "", remarks: "" });
-    updateResearcher("Lucas Sin", { thematicInterest: "Culinary Research, Food Culture", url: "https://www.lucassin.com/", linkText: "Chef Portfolio", irl: "", remarks: "" });
-    updateResearcher("Chia Amisola", { thematicInterest: "Digital Art, Web Design", url: "https://chia.dev/", linkText: "Portfolio & Projects", irl: "", remarks: "Founder of Developh" });
-    updateResearcher("Sandeep Mertia", { thematicInterest: "Digital Media, Technology Studies", url: "https://www.sarai.net/sandeep-mertia/", linkText: "Sarai Profile", irl: "", remarks: "" });
-    updateResearcher("Melissa Terras", { thematicInterest: "Digital Humanities, Cultural Heritage", url: "https://melissaterras.org/", linkText: "Academic Website", irl: "", remarks: "" });
-    updateResearcher("Jonathan Gray", { thematicInterest: "Data Politics, Digital Methods", url: "https://www.kcl.ac.uk/people/jonathan-gray", linkText: "KCL Faculty Page", irl: "", remarks: "" });
-    updateResearcher("Jeffrey Schnapp", { thematicInterest: "Digital Humanities, Design", url: "https://jeffreyschnapp.com/", linkText: "Personal Website", irl: "", remarks: "" });
-    updateResearcher("Lucan Sin", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Xiaowei Wang", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Crystal Abidin", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Sandeep Mertia", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Melissa Terras", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Jonathan Gray", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Jeffrey Schnapp", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Avani Tandon Veira", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Sofia Karim", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Dibyaduti Roy", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Miriam Posner", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Quinn Dombrowski", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Roopika Risam", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Jajwalya Karajgikar", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Dhanashree Thorat", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Sadia Khatri", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Aarman Roy", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Shaunak Sen", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Ashish Avikunthak", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Anand Patwardhan", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
-    updateResearcher("Janice Pariat", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Corinne Cath", { thematicInterest: "Cloud Infrastructures", url: "https://shop.meatspacepress.com/products/eaten-by-the-internet", linkText: "Eaten by the Internet", irl: "Futures Podcast (Live) with Corinne Cath and Fieke Jansen at Space4", remarks: "" });
+        updateResearcher("Nancy Mauro-Flude", { thematicInterest: "Design Anthropology, Embodied Cognition", url: "https://sister0.org/", linkText: "https://sister0.org/", irl: "", remarks: "Founder of the Autoluminescence Institute" });
+        updateResearcher("Sarah Shin", { thematicInterest: "", url: "https://www.library.ignota.org/", linkText: "Ignota Books", irl: "", remarks: "Bought The Carrier Bag Theory of Fiction by Ursula K. Le Guin at Camden Garden Centre" });
+        updateResearcher("Ben Vickers", { thematicInterest: "", url: "https://www.library.ignota.org/", linkText: "Ignota Books + Twitter", irl: "", remarks: "" });
+        updateResearcher("Tripta Chandola", { thematicInterest: "", url: "https://networkcultures.org/theblogofdisquiet/2024/05/01/_methodologyliterature-review-political-is-the-personal-the-personal-is-always-only-poetic/", linkText: "The Blog of Disquiet", irl: "", remarks: "" });
+        updateResearcher("Silvio Lorusso", { thematicInterest: "", url: "https://networkcultures.org/entreprecariat/why-i-almost-stopped-contributing-to-student-projects/", linkText: "Entreprecariat", irl: "", remarks: "" });
+        updateResearcher("Maya Indira Ganesh", { thematicInterest: "", url: "", linkText: "Website", irl: "Brief chat at Let’s talk about power in AI: tactics for everyday publics (www.aisocietyforum.net/programme)", remarks: "" });
+        updateResearcher("Wendi Yan", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Lia Schiffito", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Raqs Media Collective", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Ruha Benjamin", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Aris Komporozos-Athanasiou", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Hito Steyrl", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Deborah Raji", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Mindy Seu", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Rumman Chowdhary", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Valeria Ferrari", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Geert Lovink", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Peli Grietzer", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Caroline Basset", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Idil Galip", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Sam Lavigne", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Adam Crymble", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Spencer Chang", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Alicia Guo", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Saffron Huang", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Matthew Sun", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Jessica Dai", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Eyal Weisman", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Karen Gregory", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Noopur Raval", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Ashok Sukumaran", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Shaina Anand", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Ravi Sundaram", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Shannon Mattern", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Chia Amisola", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Melissa Terras", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+
+        updateResearcher("Lucan Sin", { thematicInterest: "Food activism, Chinese culinary storytelling, cultural exploration through cuisine", url: "https://flybyjing.com/blog/on-the-fly-with-lucas-sin/", linkText: "Lucas Sin profile on Fly By Jing", irl: "", remarks: "Chef of Junzi Kitchen and Nice Day Chinese, focuses on storytelling through food and cultural heritage" });
+        updateResearcher("Xiaowei Wang", { thematicInterest: "Art, technology, environmental justice, rural tech development", url: "https://www.xiaoweiwang.com/bio", linkText: "Xiaowei R. Wang personal website", irl: "", remarks: "Author of 'Blockchain Chicken Farm: And Other Stories of Tech In China's Countryside'" });
+        updateResearcher("Crystal Abidin", { thematicInterest: "Internet cultures, influencer studies, social media, children and digital platforms", url: "https://digitalchild.org.au/team-members/crystal-abidin/", linkText: "Crystal Abidin profile at ARC Centre of Excellence for the Digital Child", irl: "", remarks: "World-leading expert in influencer cultures and internet celebrity studies" });
+        updateResearcher("Sandeep Mertia", { thematicInterest: "Media technologies, computing, urbanism, digital futures", url: "https://www.stevens.edu/profile/smertia", linkText: "Sandeep Mertia faculty profile at Stevens Institute of Technology", irl: "", remarks: "Editor of 'Lives of Data: Essays on Computational Cultures from India'" });
+        updateResearcher("Melissa Terras", { thematicInterest: "Digital cultural heritage, digitisation technologies, digital humanities", url: "https://edwebprofiles.ed.ac.uk/profile/melissa-terras", linkText: "Melissa Terras faculty profile at University of Edinburgh", irl: "", remarks: "Professor of Digital Cultural Heritage, works on intersection of cultural heritage and internet technologies" });
+        updateResearcher("Jonathan Gray", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Jeffrey Schnapp", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Avani Tandon Veira", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Sofia Karim", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Dibyaduti Roy", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Miriam Posner", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Quinn Dombrowski", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Roopika Risam", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Jajwalya Karajgikar", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Dhanashree Thorat", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Sadia Khatri", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Aarman Roy", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Shaunak Sen", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Ashish Avikunthak", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Anand Patwardhan", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
+        updateResearcher("Janice Pariat", { thematicInterest: "", url: "", linkText: "", irl: "", remarks: "" });
 
     </script>
 
-    
-</footer>
+
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
